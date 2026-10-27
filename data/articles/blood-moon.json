@@ -1,0 +1,22 @@
+{
+  "id": "blood-moon",
+  "kind": "article",
+  "name": "Blood Moon",
+  "summary": "The main world event: everything with fangs grows stronger.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-events"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "moon",
+  "sections": [
+    {
+      "heading": "During a Blood Moon",
+      "body": "- All werewolves and vampires, NPCs included, are much stronger.\n- Killing NPCs gives more XP.\n- NPCs turn hostile and may attack players."
+    },
+    {
+      "heading": "When",
+      "body": "The timing is unknown. Several hours can pass between one Blood Moon and the next."
+    }
+  ]
+}

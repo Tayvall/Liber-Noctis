@@ -1,0 +1,30 @@
+{
+  "id": "levels-and-xp",
+  "kind": "article",
+  "name": "Levels & XP",
+  "summary": "Everyone starts at Level 0. Here is how the levels come.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-beginner-guide",
+    "wiki-events",
+    "wiki-mining",
+    "wiki-vampire",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "levels",
+  "sections": [
+    {
+      "heading": "Ways to earn XP",
+      "body": "- Villager quests and notice-board bounties pay XP and cash.\n- Vampires earn by feeding; humans by hunting.\n- Vampires can sleep (**B**) for slow, AFK XP. Boosts don't affect sleep XP.\n- Mining: 3 XP for coal, 6 for silver, 9 for ruby, before multipliers. See [[mining]].\n- A [[blood-moon]] gives more XP for killing NPCs.\n- Witches can set a [[level-grinding-ritual]]: 1 level every 15 minutes.\n- A vampire's [[vampire|Bloodline]] passes its founder 50% of its members' XP.\n- The rare [[beast-form-vampire]] is worth a lot of XP."
+    },
+    {
+      "heading": "XP boosts",
+      "body": "Boosts last 30 minutes each. You buy them or get them from [[redeeming-codes|codes]], and they stack with the [[double-xp-weekend]].\n\n- 2× XP: 295 Robux (266 with Plus)\n- 3× XP: 495 Robux (446 with Plus)\n- 4× XP: 795 Robux (716 with Plus)"
+    },
+    {
+      "heading": "Rank ladders",
+      "body": "Witches have a full ladder from Novice to Scarce: see [[witch]]. A vampire ladder is reported but disputed: see [[vampire]]."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "coffin",
+  "kind": "item",
+  "name": "Coffin",
+  "summary": "A vampire's coffin.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "furniture",
+  "notes": "The Original Hybrid's coffin grants the level reward.",
+  "tbc": [
+    "effect"
+  ]
+}

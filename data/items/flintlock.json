@@ -1,0 +1,16 @@
+{
+  "id": "flintlock",
+  "kind": "item",
+  "name": "Flintlock",
+  "summary": "A ranged hunting gun.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-human"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "weapon",
+  "tbc": [
+    "obtain",
+    "effect"
+  ]
+}

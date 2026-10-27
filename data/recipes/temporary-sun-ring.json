@@ -1,0 +1,46 @@
+{
+  "id": "temporary-sun-ring",
+  "kind": "recipe",
+  "name": "Temporary Sun Ring",
+  "summary": "A witch-made ring that lets a vampire walk in the sun.",
+  "trust": "tested",
+  "sources": [
+    "tay",
+    "wiki-witch-spells",
+    "wiki-misconceptions"
+  ],
+  "last_updated": "2026-10-27",
+  "aka": [
+    "Sun Ring",
+    "Temporary Daylight Ring"
+  ],
+  "category": "trinket",
+  "rarity": "uncommon",
+  "made_at": "witch-house",
+  "requires": {
+    "race": "witch",
+    "level": 100
+  },
+  "effect": "Temporarily lets a vampire walk in sunlight while worn. Unlike the [[sun-ring-pass]], it gives no stat or XP bonus.",
+  "ingredients": [
+    {
+      "item": "metal-ring",
+      "qty": 1
+    },
+    {
+      "item": "heart",
+      "qty": 1
+    }
+  ],
+  "steps": [
+    "Buy a metal ring from the [[general-shop]].",
+    "Get a heart.",
+    "Place both in the cauldron."
+  ],
+  "disputed": [
+    "Prices of 5,000 and 1,000 circulate for buying one; it is also said to be witch-crafted only."
+  ],
+  "tbc": [
+    "duration"
+  ]
+}

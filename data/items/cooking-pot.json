@@ -1,0 +1,15 @@
+{
+  "id": "cooking-pot",
+  "kind": "item",
+  "name": "Cooking Pot",
+  "summary": "For cooking the Cook Shop's vegetables.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "tool",
+  "tbc": [
+    "effect"
+  ]
+}

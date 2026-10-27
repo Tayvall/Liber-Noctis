@@ -1,0 +1,18 @@
+{
+  "id": "blacksmiths-forge",
+  "kind": "place",
+  "name": "Blacksmith's Forge",
+  "summary": "Where ore is smelted into bars.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-mining"
+  ],
+  "last_updated": "2026-10-27",
+  "region": "second-village",
+  "stations": [
+    "Forge: press E"
+  ],
+  "features": [
+    "Next to the [[weapons-shop]]. Coal is the fuel."
+  ]
+}

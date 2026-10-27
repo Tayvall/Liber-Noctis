@@ -1,0 +1,17 @@
+{
+  "id": "newcodnewnpc",
+  "kind": "code",
+  "name": "NEWCODNEWNPC",
+  "summary": "Sources disagree on whether this still works.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-codes"
+  ],
+  "last_updated": "2026-10-27",
+  "code": "NEWCODNEWNPC",
+  "status": "disputed",
+  "checked": "2026-10-25",
+  "tbc": [
+    "reward"
+  ]
+}

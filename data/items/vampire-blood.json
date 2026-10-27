@@ -1,0 +1,15 @@
+{
+  "id": "vampire-blood",
+  "kind": "item",
+  "name": "Vampire Blood",
+  "summary": "Bottled vampire blood: the first step of turning, and a brewing staple.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay",
+    "wiki-items",
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "ingredient",
+  "rarity": "common"
+}

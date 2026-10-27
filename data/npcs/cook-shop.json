@@ -1,0 +1,181 @@
+{
+  "id": "cook-shop",
+  "kind": "npc",
+  "name": "Cook Shop",
+  "summary": "The first village's grocer. Prices show only to the race allowed to buy.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "merchant",
+  "location": [
+    "first-village"
+  ],
+  "sells": [
+    {
+      "item": "cooking-pot",
+      "price": 1500
+    },
+    {
+      "name": "Tomato",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Parsnip",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Carrot",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Turnip",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Potato",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Kohlrabi",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Onion",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Beetroot",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Radish",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Cabbage",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Broccoli",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Celery",
+      "price": 350,
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "name": "Pumpkin",
+      "price": 600,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Napa Cabbage",
+      "price": 250,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Fennel",
+      "price": 400,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Zucchini",
+      "price": 200,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Calabaza",
+      "price": 350,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Gourd",
+      "price": 350,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Garlic",
+      "price": 550,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Pepper",
+      "price": 300,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Artichoke",
+      "price": 250,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Radicchio",
+      "price": 750,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Hokkaido Pumpkin",
+      "price": 500,
+      "restricted_to": [
+        "witch"
+      ]
+    },
+    {
+      "name": "Sweet Dumpling",
+      "price": 500,
+      "restricted_to": [
+        "witch"
+      ]
+    }
+  ],
+  "tbc": [
+    "uses of the vegetables"
+  ]
+}

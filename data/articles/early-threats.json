@@ -1,0 +1,18 @@
+{
+  "id": "early-threats",
+  "kind": "article",
+  "name": "Early Threats",
+  "summary": "What kills new players.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "combat",
+  "sections": [
+    {
+      "heading": "Watch for",
+      "body": "- [[red-glowing-villagers]]: they carry stakes and can one-shot a low-level vampire\n- [[town-guards]]: high health and heavy damage\n- Running out of stamina mid-fight"
+    }
+  ]
+}

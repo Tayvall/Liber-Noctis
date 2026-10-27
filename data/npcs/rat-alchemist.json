@@ -1,0 +1,28 @@
+{
+  "id": "rat-alchemist",
+  "kind": "npc",
+  "name": "Rat Alchemist",
+  "summary": "A quest NPC who appears at random in the second village.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "quest",
+  "location": [
+    "second-village"
+  ],
+  "quest": {
+    "requires": [
+      "Be a [[witch]] of Lv 800+."
+    ],
+    "objectives": [
+      "Defeat two different Original Vampire players.",
+      "Craft one [[white-oak-ash-dagger]].",
+      "Visit eight places: the [[first-village]], the [[second-village]], the [[vampire-castle]], the [[werewolf-den]], the [[cemetery]], the [[church]], the [[tavern]], and an eighth that nobody has found yet [TBC]."
+    ],
+    "rewards": [
+      "A potion with 20 uses that turns you into a rat for up to 5 minutes each: see [[rat-spell]]"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "to-original-vampire",
+  "kind": "transformation",
+  "name": "Becoming an Original",
+  "summary": "There is one door: the game pass.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-original-vampire",
+    "wiki-misconceptions"
+  ],
+  "last_updated": "2026-10-27",
+  "from_any": true,
+  "to": "original-vampire",
+  "method": "Original Vampire game pass",
+  "requirements": [
+    "The [[original-vampire-pass]]: 1,895 Robux, or 1,706 with Premium."
+  ],
+  "via": [
+    "original-vampire-pass"
+  ],
+  "notes": "Confirmed on the game's Discord: you cannot level, age or be bitten into an Original."
+}

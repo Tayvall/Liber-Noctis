@@ -1,0 +1,15 @@
+{
+  "id": "silver-stake",
+  "kind": "item",
+  "name": "Silver Stake",
+  "summary": "A wood stake bound in silver.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "weapon",
+  "tbc": [
+    "effect"
+  ]
+}

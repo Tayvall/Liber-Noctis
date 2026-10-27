@@ -1,0 +1,19 @@
+{
+  "id": "double-xp-weekend",
+  "kind": "article",
+  "name": "2× XP Weekend",
+  "summary": "Double XP from every Friday.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-events",
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "moon",
+  "sections": [
+    {
+      "heading": "When",
+      "body": "Starts every Friday. XP boosts stack with it: see [[levels-and-xp]]."
+    }
+  ]
+}

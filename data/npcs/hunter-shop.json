@@ -1,0 +1,56 @@
+{
+  "id": "hunter-shop",
+  "kind": "npc",
+  "name": "Hunter Shop",
+  "summary": "Kit for hunting vampires and werewolves.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items",
+    "wiki-map",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "merchant",
+  "map": {
+    "x": 65.2,
+    "y": 41.5
+  },
+  "pin": "merchant",
+  "sells": [
+    {
+      "item": "gartic-potion",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "item": "night-vision",
+      "price": 450
+    },
+    {
+      "item": "cross",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "item": "training-dummy",
+      "restricted_to": [
+        "human"
+      ]
+    },
+    {
+      "item": "werewolf-ring",
+      "price": 400000,
+      "restricted_to": [
+        "werewolf"
+      ]
+    },
+    {
+      "item": "wolfsbane-potion",
+      "restricted_to": [
+        "human"
+      ]
+    }
+  ]
+}

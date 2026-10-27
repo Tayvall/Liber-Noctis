@@ -1,0 +1,17 @@
+{
+  "id": "red-glowing-villagers",
+  "kind": "npc",
+  "name": "Red-glowing villagers",
+  "summary": "Villagers who glow red and carry stakes.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "enemy",
+  "hostile": true,
+  "notes": "They can one-shot a low-level vampire.",
+  "tbc": [
+    "location"
+  ]
+}

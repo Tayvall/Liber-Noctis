@@ -1,0 +1,19 @@
+{
+  "id": "ruby",
+  "kind": "item",
+  "name": "Ruby",
+  "summary": "Ruby ore, mined from red rocks.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-mining",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "ore",
+  "obtain": [
+    {
+      "method": "mined",
+      "text": "Ruby rocks have 125 health and yield 1 Ruby each. 9 XP."
+    }
+  ]
+}

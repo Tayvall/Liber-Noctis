@@ -1,0 +1,23 @@
+{
+  "id": "strength",
+  "kind": "spell",
+  "name": "Strength!",
+  "summary": "A shouted blessing that makes an ally hit harder.",
+  "trust": "tested",
+  "sources": [
+    "tay",
+    "wiki-witch",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "form": "spoken",
+  "incantation": "Strength!",
+  "caster": {
+    "race": "witch",
+    "level": 25
+  },
+  "effect": "+20% strength. It does not stack.",
+  "cooldown": "38 s",
+  "targets": "An NPC or an ally",
+  "notes": "The old handbook said +20% *damage*; the wiki says +20% *strength*."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "windmill-tower",
+  "kind": "place",
+  "name": "Windmill Tower",
+  "summary": "Where the Vampire Hunter quest begins.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map",
+    "wiki-vampire-hunter"
+  ],
+  "last_updated": "2026-10-27",
+  "features": [
+    "Near the merchant in front of the [[vampire-castle]]."
+  ],
+  "map": {
+    "x": 57.6,
+    "y": 35.7
+  },
+  "pin": "merchant"
+}

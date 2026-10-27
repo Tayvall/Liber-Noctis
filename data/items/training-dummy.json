@@ -1,0 +1,18 @@
+{
+  "id": "training-dummy",
+  "kind": "item",
+  "name": "Training Dummy",
+  "summary": "A dummy to practise on.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "tool",
+  "restricted_to": [
+    "human"
+  ],
+  "tbc": [
+    "effect"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "throwing-knife",
+  "kind": "item",
+  "name": "Throwing Knife",
+  "summary": "The Vampire Hunter's blade.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items",
+    "wiki-vampire-hunter",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "weapon",
+  "restricted_to": [
+    "vampire-hunter"
+  ],
+  "effect": "Damage scales with level and Strength.",
+  "obtain": [
+    {
+      "method": "reward",
+      "npc": "hunter-quest-giver",
+      "text": "The Vampire Hunter quest reward."
+    }
+  ]
+}

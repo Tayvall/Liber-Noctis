@@ -1,0 +1,16 @@
+{
+  "id": "town-guards",
+  "kind": "npc",
+  "name": "Town guards",
+  "summary": "Guards with high health and heavy hits.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "enemy",
+  "tbc": [
+    "location",
+    "level"
+  ]
+}

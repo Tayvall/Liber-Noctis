@@ -1,0 +1,22 @@
+{
+  "id": "hybrid",
+  "kind": "race",
+  "name": "Hybrid",
+  "summary": "A separate hybrid variation, promised for a later update. It cannot be obtained yet.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-hybrid"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "playable",
+  "origin": "upcoming",
+  "type_line": "Coming in a later update",
+  "notes": "Nothing is confirmed about how it is obtained or what it does. See [[original-hybrid]] for the hybrid you can become today.",
+  "tbc": [
+    "daylight",
+    "blood",
+    "abilities",
+    "strengths",
+    "weaknesses"
+  ]
+}

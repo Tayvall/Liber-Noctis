@@ -1,0 +1,49 @@
+{
+  "id": "human",
+  "kind": "race",
+  "name": "Human",
+  "summary": "Everyone wakes as a Human: the only path that is safe in daylight, and the only one with a stat tree.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-human",
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "playable",
+  "origin": "starting",
+  "type_line": "Where every life begins",
+  "daylight": "Safe. Humans take no sun damage.",
+  "blood": "None. Humans never need to feed.",
+  "starts_with": [
+    "Level 0",
+    "Bare fists"
+  ],
+  "strengths": [
+    "Free to roam in daylight",
+    "No feeding upkeep",
+    "Strong early income from quests",
+    "The hunter's toolkit: [[cross]], [[wood-stake]], [[wolfsbane-potion]]"
+  ],
+  "weaknesses": [
+    "No supernatural abilities",
+    "The slowest climb of any path: levelling your stats takes time"
+  ],
+  "sections": [
+    {
+      "heading": "Playstyle",
+      "body": "Humans rise through villager quests, notice-board bounties and hunting. Quest cash buys better weapons, and bounties pay per kill. Reported bounties include *Kill 20 NPCs in city* (70 XP and $50) and *Kill 5 guards* (55 XP and $60)."
+    },
+    {
+      "heading": "Weapons",
+      "body": "- Fists, to begin with\n- [[wood-stake]]: punishes a vampire who comes too close\n- [[flintlock]]: a ranged hunting weapon\n- [[shotgun]]: wooden pellets, 8 rounds, a headshot decapitates"
+    },
+    {
+      "heading": "The stat tree",
+      "body": "Humans are the only path with a stat tree. Raising Strength makes the [[dagger]], [[rapier]], [[throwing-knife]] and [[white-oak-ash-dagger]] hit harder."
+    }
+  ],
+  "tips": [
+    "Do outdoor quests while the sun is up, and buy a better weapon before night falls.",
+    "Changed your mind about a race? A [[human-potion]] from the [[general-shop]] turns you back."
+  ]
+}

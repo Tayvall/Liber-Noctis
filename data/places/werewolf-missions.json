@@ -1,0 +1,19 @@
+{
+  "id": "werewolf-missions",
+  "kind": "place",
+  "name": "Werewolf Missions",
+  "summary": "A werewolf mission area.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map"
+  ],
+  "last_updated": "2026-10-27",
+  "tbc": [
+    "features"
+  ],
+  "map": {
+    "x": 28.2,
+    "y": 68.4
+  },
+  "pin": "area"
+}

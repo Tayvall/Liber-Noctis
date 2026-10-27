@@ -1,0 +1,15 @@
+{
+  "id": "night-vision",
+  "kind": "item",
+  "name": "Night Vision",
+  "summary": "See in the dark.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "trinket",
+  "tbc": [
+    "effect"
+  ]
+}

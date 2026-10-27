@@ -1,0 +1,15 @@
+{
+  "id": "double-blood-bar",
+  "kind": "item",
+  "name": "Double Blood Bar",
+  "summary": "Sold to vampires inside the castle.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "consumable",
+  "tbc": [
+    "effect"
+  ]
+}

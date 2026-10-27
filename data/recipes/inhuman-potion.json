@@ -1,0 +1,48 @@
+{
+  "id": "inhuman-potion",
+  "kind": "recipe",
+  "name": "Inhuman Potion",
+  "summary": "A draught that makes an Original proof against the White Oak Ash Dagger.",
+  "trust": "tested",
+  "sources": [
+    "tay",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "potion",
+  "rarity": "rare",
+  "made_at": "witch-house",
+  "requires": {
+    "race": "witch",
+    "level": 1000
+  },
+  "effect": "Original Vampires become immune to the [[white-oak-ash-dagger]].",
+  "duration": "5 hours",
+  "ingredients": [
+    {
+      "item": "dagger",
+      "qty": 1
+    },
+    {
+      "item": "heart",
+      "qty": 1
+    },
+    {
+      "item": "vampire-blood",
+      "qty": 1
+    }
+  ],
+  "steps": [
+    "Combine all three at the cauldron."
+  ],
+  "works_on": [
+    {
+      "race": "original-vampire",
+      "works": true,
+      "trust": "tested"
+    }
+  ],
+  "disputed": [
+    "The old handbook says it guards against White Oak *Stakes*; the wiki says the White Oak *Ash Dagger*."
+  ]
+}

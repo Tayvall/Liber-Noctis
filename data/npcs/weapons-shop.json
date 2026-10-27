@@ -1,0 +1,79 @@
+{
+  "id": "weapons-shop",
+  "kind": "npc",
+  "name": "Weapons Shop",
+  "summary": "The second village's weaponsmith. Some blades cost materials as well as cash.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items",
+    "wiki-mining",
+    "tay",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "merchant",
+  "aka": [
+    "Weapons Merchant",
+    "Weaponsmith"
+  ],
+  "location": [
+    "second-village"
+  ],
+  "sells": [
+    {
+      "item": "wood-stake",
+      "price": 300
+    },
+    {
+      "item": "silver-stake",
+      "materials": [
+        {
+          "item": "wood-stake",
+          "qty": 1
+        },
+        {
+          "item": "silver-bar",
+          "qty": 8
+        }
+      ]
+    },
+    {
+      "item": "white-oak-stake",
+      "price": 15000
+    },
+    {
+      "item": "dagger",
+      "price": 400,
+      "materials": [
+        {
+          "item": "silver",
+          "qty": 20
+        }
+      ]
+    },
+    {
+      "item": "throwing-knife",
+      "restricted_to": [
+        "vampire-hunter"
+      ]
+    },
+    {
+      "item": "rapier",
+      "materials": [
+        {
+          "item": "wood-stake",
+          "qty": 3
+        },
+        {
+          "item": "silver-bar",
+          "qty": 15
+        }
+      ]
+    },
+    {
+      "item": "pickaxe",
+      "price": 500
+    }
+  ],
+  "notes": "The shop tells you when you are missing materials."
+}

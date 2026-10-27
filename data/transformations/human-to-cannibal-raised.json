@@ -1,0 +1,18 @@
+{
+  "id": "human-to-cannibal-raised",
+  "kind": "transformation",
+  "name": "Raised by a Cannibal",
+  "summary": "Be infected by a Cannibal Vampire as a Human.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-cannibal-raised"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "human"
+  ],
+  "to": "cannibal-raised-vampire",
+  "method": "Infected by a Cannibal Vampire",
+  "chance": "1% on completing the transformation",
+  "when": "As the transformation completes"
+}

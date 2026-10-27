@@ -1,0 +1,23 @@
+{
+  "id": "cannibal-vampire",
+  "kind": "race",
+  "name": "Cannibal Vampire",
+  "summary": "A vampire who drinks only vampire blood, and is about a fifth stronger for it.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-cannibal-vampire"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "variant",
+  "parent": "vampire",
+  "origin": "earned",
+  "type_line": "Vampire variant",
+  "blood": "Vampire blood only. Any other blood has a 20% chance of turning you back into a normal vampire.",
+  "strengths": [
+    "All stats about 20% above an Original Vampire's"
+  ],
+  "weaknesses": [
+    "Drinking non-vampire blood risks losing the variant (20%)",
+    "Sunlight and stakes, as for every vampire"
+  ]
+}

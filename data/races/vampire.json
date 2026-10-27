@@ -1,0 +1,140 @@
+{
+  "id": "vampire",
+  "kind": "race",
+  "name": "Vampire",
+  "summary": "Fast, lethal and always thirsty. Vampires burn in the sun and must feed to stay on their feet.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-vampire",
+    "wiki-beginner-guide",
+    "discord-2026-10-25",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "playable",
+  "origin": "turned",
+  "type_line": "Turned, or born by gamepass",
+  "daylight": "Burns. Sunlight sets a vampire alight, and so do holy places: vampires cannot enter church interiors.",
+  "blood": "A thirst meter. Feed on players, villagers or blood bags to refill it and earn XP. Without blood a vampire desiccates.",
+  "abilities": [
+    {
+      "name": "Blood Sucking",
+      "starting": true,
+      "effect": "Bite and drink, restoring some Blood while dealing a little damage. A bitten vampire cannot regenerate while it lasts."
+    },
+    {
+      "name": "Vampiric Vision",
+      "starting": true,
+      "effect": "See the organs inside other beings and sense creatures from far away."
+    },
+    {
+      "name": "Neck Break",
+      "level": 5,
+      "cooldown": "18 s",
+      "effect": "Instantly break the neck of an NPC or player."
+    },
+    {
+      "name": "Hypnosis",
+      "level": 20,
+      "cooldown": "15 s",
+      "effect": "Hypnotise and control players and NPCs."
+    },
+    {
+      "name": "Ceiling Sleep",
+      "key": "B",
+      "level": 100,
+      "effect": "Hang from the ceiling and sleep for slow, AFK XP. XP boosts do not affect it."
+    },
+    {
+      "name": "Infect",
+      "level": 150,
+      "cooldown": "8 s",
+      "effect": "Begin turning a Human. See *Ways in*.",
+      "works_on": [
+        {
+          "race": "human",
+          "works": true,
+          "trust": "unconfirmed"
+        }
+      ]
+    },
+    {
+      "name": "Heart Extraction",
+      "level": 150,
+      "cooldown": "90 s",
+      "effect": "Rip out a [[heart]]. Eating it grants one extra life against a lethal attack."
+    },
+    {
+      "name": "Bloodline",
+      "level": 800,
+      "effect": "Found a Bloodline and bind Humans to it. Members turn into vampires tied to you; you can watch and command them and take 50% of the XP they earn. A member goes free at Level 300."
+    },
+    {
+      "name": "Chest Swarm",
+      "level": 2000,
+      "effect": "A swarm strikes the target and drags it before flying back. Damage scales with level. Added 26 October 2026."
+    },
+    {
+      "name": "Ground Stomp",
+      "level": 3000,
+      "effect": "Hold the punch button to crack the ground with a shockwave. Once an Original's move."
+    }
+  ],
+  "ranks": [
+    {
+      "name": "Rookie",
+      "from": 0,
+      "to": 50
+    },
+    {
+      "name": "Bloodthirsty",
+      "from": 51,
+      "to": 200
+    },
+    {
+      "name": "Experienced",
+      "from": 201,
+      "to": 400
+    },
+    {
+      "name": "Ancient",
+      "from": 401
+    }
+  ],
+  "clan": {
+    "name": "Bloodline",
+    "body": "Vampires gather in bloodlines, as witches form covens and werewolves form packs.\n\n- `/bloodline <name>` and `/editbloodline <name>`\n- `/delbloodline`\n- `/blinvite <player>`, `/blaccept`, `/bldecline`\n- `/blkick <player>`, `/blleave`, `/blmembers`"
+  },
+  "strengths": [
+    "Speed",
+    "A lethal close-range kit",
+    "XP from feeding",
+    "Minions at Lv 3,000"
+  ],
+  "weaknesses": [
+    "Sunlight and holy places",
+    "Constant feeding",
+    "Stakes and hunters: see [[red-glowing-villagers]]"
+  ],
+  "sections": [
+    {
+      "heading": "Natural-born",
+      "body": "A Natural-Born Vampire is not a spawn choice. It comes with the [[original-vampire-pass]], and starts with supernatural speed and abilities."
+    },
+    {
+      "heading": "Sun protection",
+      "body": "- Stay indoors, or in the castle\n- [[temporary-sun-ring]], crafted by a witch\n- [[sun-ring-pass]]\n- [[vampire-hat]]\n- [[vampire-cape]]"
+    },
+    {
+      "heading": "Minions",
+      "body": "Any vampire of Lv 3,000 or higher can keep a minion:\n\n1. Reach Lv 3,000.\n2. Infect a normal Human.\n3. They say *“I'm your servant and I wait for your orders.”* They are now your minion.\n4. Walk up to them and press **L** to command them.\n\nMinions can help you farm and add damage. More abilities, such as shopping and mining, may come later."
+    }
+  ],
+  "disputed": [
+    "Vampire ranks: one guide lists the ladder above; another says vampires have no named ranks.",
+    "An older source lists different keybinds (Q Snap Neck, E Bite, R Rip Heart, G Feed Blood, Y Decapitate, C Compulsion, H Super Hearing, X Carry, V Vampire Face, B Sleep). They have not been reconciled with the level system."
+  ],
+  "tbc": [
+    "abilities.key"
+  ]
+}

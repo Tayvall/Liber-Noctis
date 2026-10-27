@@ -1,0 +1,23 @@
+{
+  "id": "full-moon",
+  "kind": "article",
+  "name": "The Full Moon",
+  "summary": "The night a scratch becomes a werewolf.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-werewolf",
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "moon",
+  "sections": [
+    {
+      "heading": "What it does",
+      "body": "A Human infected by a werewolf's scratch turns into a [[werewolf]] the moment the next full moon rises. See [[human-to-werewolf]]."
+    },
+    {
+      "heading": "When it comes",
+      "body": "How often the full moon rises and how long it lasts are [TBC]."
+    }
+  ]
+}

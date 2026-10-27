@@ -1,0 +1,26 @@
+{
+  "id": "blood-cup",
+  "kind": "item",
+  "name": "Blood Cup",
+  "summary": "A cup a vampire has filled with blood.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "ingredient",
+  "rarity": "common",
+  "obtain": [
+    {
+      "method": "made",
+      "items": [
+        "cup"
+      ],
+      "text": "Give an empty [[cup]] to a vampire to fill. The old handbook says the vampire must be Lv 100+."
+    }
+  ],
+  "tbc": [
+    "obtain.level"
+  ]
+}

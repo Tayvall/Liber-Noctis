@@ -1,0 +1,29 @@
+{
+  "id": "blood-dish",
+  "kind": "item",
+  "name": "Blood Dish",
+  "summary": "A dish a vampire has filled with blood. It holds more than a cup.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "ingredient",
+  "rarity": "common",
+  "aka": [
+    "Blood bowl"
+  ],
+  "obtain": [
+    {
+      "method": "made",
+      "items": [
+        "dish"
+      ],
+      "text": "Give an empty [[dish]] to a vampire to fill. The old handbook says the vampire must be Lv 100+."
+    }
+  ],
+  "tbc": [
+    "obtain.level"
+  ]
+}

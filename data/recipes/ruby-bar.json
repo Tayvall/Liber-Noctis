@@ -1,0 +1,32 @@
+{
+  "id": "ruby-bar",
+  "kind": "recipe",
+  "name": "Ruby Bar",
+  "summary": "Ruby smelted down with plenty of coal.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-mining"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "material",
+  "made_at": "blacksmiths-forge",
+  "ingredients": [
+    {
+      "item": "ruby",
+      "qty": 1
+    }
+  ],
+  "fuel": [
+    {
+      "item": "coal",
+      "qty": 10
+    }
+  ],
+  "steps": [
+    "Press **E** at the forge.",
+    "Choose Ruby, then press **SMELT**."
+  ],
+  "tbc": [
+    "use"
+  ]
+}

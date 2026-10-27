@@ -1,0 +1,37 @@
+{
+  "id": "human-to-werewolf",
+  "kind": "transformation",
+  "name": "Human to Werewolf",
+  "summary": "Get scratched on the back by a strong werewolf and wait for the moon.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-werewolf",
+    "wiki-beginner-guide",
+    "wiki-misconceptions",
+    "itzvexo-werewolf"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "human"
+  ],
+  "to": "werewolf",
+  "method": "A werewolf's scratch, then the full moon",
+  "requirements": [
+    "You must be [[human]]. Turn back first with a [[human-potion]] if you are not."
+  ],
+  "steps": [
+    "Find a werewolf player, or a [[werewolf-npcs|werewolf NPC]] of Lv 6,000 or higher.",
+    "Get scratched on the back until the infection takes.",
+    "Wait for the [[full-moon]]. You turn the moment it rises."
+  ],
+  "chance": "5% per scratch",
+  "when": "The next full moon",
+  "via": [
+    "human-potion",
+    "werewolf-npcs"
+  ],
+  "disputed": [
+    "The Werewolf page applies the Lv 6,000 limit to NPCs only; the Beginner Guide applies it to any werewolf."
+  ],
+  "notes": "There is no quest, boss or shop route."
+}

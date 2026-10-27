@@ -1,0 +1,17 @@
+{
+  "id": "newcodupdate27",
+  "kind": "code",
+  "name": "NEWCODUPDATE27",
+  "summary": "Sources disagree on whether this still works.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-codes"
+  ],
+  "last_updated": "2026-10-27",
+  "code": "NEWCODUPDATE27",
+  "status": "disputed",
+  "checked": "2026-10-25",
+  "tbc": [
+    "reward"
+  ]
+}

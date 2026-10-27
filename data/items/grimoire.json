@@ -1,0 +1,20 @@
+{
+  "id": "grimoire",
+  "kind": "item",
+  "name": "Grimoire",
+  "summary": "A spellbook lying in the woods. Make a pact with it to become a witch.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-witch",
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "trinket",
+  "obtain": [
+    {
+      "method": "found",
+      "place": "the-woods",
+      "text": "Spawns at random."
+    }
+  ]
+}

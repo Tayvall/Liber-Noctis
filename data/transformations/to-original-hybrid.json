@@ -1,0 +1,36 @@
+{
+  "id": "to-original-hybrid",
+  "kind": "transformation",
+  "name": "Becoming an Original Hybrid",
+  "summary": "Lv 5,000, a strong partner, the Original pass, and luck.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-original-hybrid",
+    "wiki-sources",
+    "discord-owner-hybrid",
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "vampire",
+    "original-vampire",
+    "werewolf"
+  ],
+  "to": "original-hybrid",
+  "method": "Transformed by a Lv 3,000+ player",
+  "chance": "0.5%",
+  "requirements": [
+    "Be Lv 5,000.",
+    "A player of Lv 3,000 or higher to transform you.",
+    "The [[original-vampire-pass]]."
+  ],
+  "steps": [
+    "As a vampire: a werewolf scratches you.",
+    "As a werewolf: you drink blood while a vampire assists.",
+    "Keep trying. It is luck."
+  ],
+  "via": [
+    "original-vampire-pass"
+  ],
+  "notes": "The owner has also quoted 0.1% (23 October 2026). Tay confirms 0.5% is the current rate. Staff ask players not to open tickets about the odds: some succeed in minutes, others take days."
+}

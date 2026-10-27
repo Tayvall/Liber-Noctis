@@ -1,0 +1,15 @@
+{
+  "id": "wfeedvamps",
+  "kind": "code",
+  "name": "WFEEDVAMPS",
+  "summary": "Widely reported as working.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-codes"
+  ],
+  "last_updated": "2026-10-27",
+  "code": "WFEEDVAMPS",
+  "status": "active",
+  "checked": "2026-10-25",
+  "reward": "4× XP for 1 h"
+}

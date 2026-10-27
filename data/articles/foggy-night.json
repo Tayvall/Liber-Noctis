@@ -1,0 +1,18 @@
+{
+  "id": "foggy-night",
+  "kind": "article",
+  "name": "Foggy Night",
+  "summary": "A night so thick you can barely see.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-events"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "moon",
+  "sections": [
+    {
+      "heading": "Effect",
+      "body": "Little, except that it is extremely hard to see."
+    }
+  ]
+}

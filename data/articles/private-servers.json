@@ -1,0 +1,19 @@
+{
+  "id": "private-servers",
+  "kind": "article",
+  "name": "Private Servers",
+  "summary": "Chat commands for your own server.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-private-servers",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "passes",
+  "sections": [
+    {
+      "heading": "Commands",
+      "body": "- `/day`, `/night`: set the time of day\n- `/allday`, `/allnight`: make it day or night forever\n- `/lib <username>`: let another player use your time commands (added 26 Oct 2026)\n- `/unlib <username>`: take that back"
+    }
+  ]
+}

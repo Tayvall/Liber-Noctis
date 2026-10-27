@@ -1,0 +1,33 @@
+{
+  "id": "sunlight",
+  "kind": "article",
+  "name": "The Sun",
+  "summary": "Daylight is safe for some and deadly for others.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-beginner-guide",
+    "wiki-vampire",
+    "wiki-original-vampire",
+    "wiki-original-hybrid"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "sun",
+  "sections": [
+    {
+      "heading": "Who burns",
+      "body": "- [[human|Humans]] and [[witch|Witches]] are safe in daylight.\n- [[vampire|Vampires]] catch fire outdoors and take heavy burn damage.\n- [[original-vampire|Originals]] are hurt by the sun but cannot be killed by it.\n- [[original-hybrid|Original Hybrids]] do not burn."
+    },
+    {
+      "heading": "Holy places",
+      "body": "Vampires burn inside holy places such as the [[church]], and cannot enter church interiors. Hiding in a church is a myth."
+    },
+    {
+      "heading": "Protection",
+      "body": "- Stay indoors, or in the [[vampire-castle]]\n- [[temporary-sun-ring]]\n- [[sun-ring-pass]]\n- [[vampire-hat]]\n- [[vampire-cape]]"
+    },
+    {
+      "heading": "Day and night",
+      "body": "How long a day or a night lasts is [TBC]. On [[private-servers]], the owner can set the time."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "second-village-merchant",
+  "kind": "place",
+  "name": "Merchant (second village)",
+  "summary": "A merchant marked on the wiki map by the second village.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map"
+  ],
+  "last_updated": "2026-10-27",
+  "region": "second-village",
+  "tbc": [
+    "features"
+  ],
+  "notes": "Which shop this pin marks is not stated.",
+  "map": {
+    "x": 55.0,
+    "y": 70.0
+  },
+  "pin": "merchant"
+}

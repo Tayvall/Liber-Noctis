@@ -1,0 +1,37 @@
+{
+  "id": "vampire-shop",
+  "kind": "npc",
+  "name": "Vampire Shop",
+  "summary": "The merchant inside the castle.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items",
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "merchant",
+  "aka": [
+    "Vampire castle merchant"
+  ],
+  "location": [
+    "vampire-castle"
+  ],
+  "sells": [
+    {
+      "item": "vampire-blood",
+      "price": 250
+    },
+    {
+      "item": "double-blood-bar",
+      "price": 1000
+    },
+    {
+      "item": "vampire-hat",
+      "price": 400
+    },
+    {
+      "item": "coffin",
+      "price": 200000
+    }
+  ]
+}

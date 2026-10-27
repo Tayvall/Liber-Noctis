@@ -1,0 +1,15 @@
+{
+  "id": "broom",
+  "kind": "item",
+  "name": "Broom",
+  "summary": "A witch's broom, for chasing or escaping.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items",
+    "wiki-witch"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "trinket",
+  "effect": "Faster travel.",
+  "durability": "Low: don't spam it"
+}

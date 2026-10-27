@@ -1,0 +1,19 @@
+{
+  "id": "werewolf-den",
+  "kind": "place",
+  "name": "Werewolf Den",
+  "summary": "The werewolves' den.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map"
+  ],
+  "last_updated": "2026-10-27",
+  "tbc": [
+    "features"
+  ],
+  "map": {
+    "x": 46.3,
+    "y": 15.3
+  },
+  "pin": "base"
+}

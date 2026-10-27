@@ -1,0 +1,16 @@
+{
+  "id": "hunters-lv100-300",
+  "kind": "place",
+  "name": "Hunter grounds (Lv 100–300)",
+  "summary": "Where low-level hunter NPCs roam.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map"
+  ],
+  "last_updated": "2026-10-27",
+  "map": {
+    "x": 54.5,
+    "y": 16.3
+  },
+  "pin": "enemies"
+}

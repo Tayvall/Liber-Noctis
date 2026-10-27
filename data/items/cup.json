@@ -1,0 +1,16 @@
+{
+  "id": "cup",
+  "kind": "item",
+  "name": "Cup",
+  "summary": "An empty cup, waiting for blood.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "ingredient",
+  "disputed": [
+    "The Items page sells it at the General Shop; Witch Spells says the first town's cooking merchant."
+  ]
+}

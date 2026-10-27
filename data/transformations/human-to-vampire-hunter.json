@@ -1,0 +1,27 @@
+{
+  "id": "human-to-vampire-hunter",
+  "kind": "transformation",
+  "name": "Human to Vampire Hunter",
+  "summary": "Take the hunter's quest at the windmill tower.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-vampire-hunter"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "human"
+  ],
+  "to": "vampire-hunter",
+  "method": "The Vampire Hunter quest",
+  "requirements": [
+    "You must be [[human]]."
+  ],
+  "steps": [
+    "Go to the [[windmill-tower]] near the merchant in front of the [[vampire-castle]].",
+    "Talk to the [[hunter-quest-giver|quest NPC]].",
+    "Accept and complete the Vampire Hunter quest."
+  ],
+  "via": [
+    "hunter-quest-giver"
+  ]
+}

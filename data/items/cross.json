@@ -1,0 +1,25 @@
+{
+  "id": "cross",
+  "kind": "item",
+  "name": "Cross",
+  "summary": "Holy wood that drives vampires back, and sets them alight if they press on.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "weapon",
+  "restricted_to": [
+    "human"
+  ],
+  "effect": "Held near a vampire, it repels and knocks them back. If they keep coming they catch fire, and the longer they persist the more they burn, perhaps to death.",
+  "durability": "Limited",
+  "use": "To bless it, take it to the [[church]] as a Human of Lv 200+.",
+  "works_on": [
+    {
+      "race": "vampire",
+      "works": true,
+      "trust": "unconfirmed"
+    }
+  ]
+}

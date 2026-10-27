@@ -1,0 +1,18 @@
+{
+  "id": "werewolf-ring",
+  "kind": "item",
+  "name": "Werewolf Ring",
+  "summary": "Keeps a werewolf in full wolf form for good.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items",
+    "wiki-werewolf"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "trinket",
+  "restricted_to": [
+    "werewolf"
+  ],
+  "effect": "Permanent full wolf mode.",
+  "durability": "Permanent"
+}

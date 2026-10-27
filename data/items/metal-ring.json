@@ -1,0 +1,15 @@
+{
+  "id": "metal-ring",
+  "kind": "item",
+  "name": "Metal Ring",
+  "summary": "A plain ring, waiting for a witch's work.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay",
+    "wiki-items",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "ingredient",
+  "rarity": "common"
+}

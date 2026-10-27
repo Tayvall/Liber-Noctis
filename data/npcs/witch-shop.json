@@ -1,0 +1,31 @@
+{
+  "id": "witch-shop",
+  "kind": "npc",
+  "name": "Witch Shop",
+  "summary": "The witches' little shop.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-items",
+    "wiki-witch",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "merchant",
+  "sells": [
+    {
+      "item": "broom",
+      "price": 15000
+    },
+    {
+      "item": "candle",
+      "limit": 5
+    },
+    {
+      "item": "witch-bag"
+    }
+  ],
+  "tbc": [
+    "location"
+  ],
+  "notes": "The wiki places it at the witches' hideout."
+}

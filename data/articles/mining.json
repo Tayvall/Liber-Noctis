@@ -1,0 +1,31 @@
+{
+  "id": "mining",
+  "kind": "article",
+  "name": "Mining",
+  "summary": "Break rocks for ore, smelt it into bars or sell it.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-mining",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "gathering",
+  "sections": [
+    {
+      "heading": "Getting started",
+      "body": "Buy a [[pickaxe]] from the [[weapons-shop]] in the second village."
+    },
+    {
+      "heading": "Ores",
+      "body": "Each rock shows its ore and a health bar, and yields exactly one ore.\n\n- [[silver]]: 120 health, 6 XP\n- [[ruby]]: 125 health, 9 XP\n- [[coal]]: 50 health, 3 XP; fuel for smelting"
+    },
+    {
+      "heading": "Smelting",
+      "body": "At the [[blacksmiths-forge]]: [[silver-bar]] (1 Silver + 4 Coal) and [[ruby-bar]] (1 Ruby + 10 Coal)."
+    },
+    {
+      "heading": "Selling",
+      "body": "The [[ore-buyer]] in each village buys ore in lots of 60."
+    }
+  ]
+}

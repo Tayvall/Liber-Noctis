@@ -1,0 +1,15 @@
+{
+  "id": "updateuimobile",
+  "kind": "code",
+  "name": "UPDATEUIMOBILE",
+  "summary": "Widely reported as working.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-codes"
+  ],
+  "last_updated": "2026-10-27",
+  "code": "UPDATEUIMOBILE",
+  "status": "active",
+  "checked": "2026-10-25",
+  "reward": "3× XP for 1 h"
+}

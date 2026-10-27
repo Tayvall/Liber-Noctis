@@ -1,0 +1,37 @@
+{
+  "id": "white-oak-ash-dagger",
+  "kind": "recipe",
+  "name": "White Oak Ash Dagger",
+  "summary": "A dagger of white oak ash that pins a vampire down, and never wears out.",
+  "trust": "tested",
+  "sources": [
+    "tay",
+    "wiki-witch-spells",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "aka": [
+    "White Oak Dagger"
+  ],
+  "category": "weapon",
+  "rarity": "rare",
+  "made_at": "witch-house",
+  "requires": {
+    "race": "witch",
+    "level": 800
+  },
+  "effect": "Holds a vampire down.",
+  "uses": "Unlimited",
+  "ingredients": [
+    {
+      "item": "dagger",
+      "qty": 1
+    },
+    {
+      "item": "white-oak-stake",
+      "qty": 1,
+      "note": "it can't be dropped, so you must buy it yourself"
+    }
+  ],
+  "notes": "Its damage scales with level and a human's Strength. An [[inhuman-potion]] makes an Original immune to it."
+}

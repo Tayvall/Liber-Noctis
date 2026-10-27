@@ -1,0 +1,15 @@
+{
+  "id": "tavern",
+  "kind": "place",
+  "name": "Tavern",
+  "summary": "The first village's tavern.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "region": "first-village",
+  "features": [
+    "One of the places the [[rat-alchemist]] sends you."
+  ]
+}

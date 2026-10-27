@@ -1,0 +1,17 @@
+{
+  "id": "cannibal-to-vampire",
+  "kind": "transformation",
+  "name": "Losing the Cannibal",
+  "summary": "Drink anything but vampire blood and you may lose it.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-cannibal-vampire"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "cannibal-vampire"
+  ],
+  "to": "vampire",
+  "method": "Drinking non-vampire blood",
+  "chance": "20% per drink"
+}

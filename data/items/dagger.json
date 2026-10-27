@@ -1,0 +1,17 @@
+{
+  "id": "dagger",
+  "kind": "item",
+  "name": "Dagger",
+  "summary": "A short blade from the weaponsmith, and the base of two witch brews.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay",
+    "wiki-items",
+    "wiki-witch-spells",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "weapon",
+  "rarity": "uncommon",
+  "effect": "Damage scales with your level and, for humans, Strength."
+}

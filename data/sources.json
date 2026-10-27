@@ -1,0 +1,260 @@
+{
+  "sources": [
+    {
+      "id": "tay",
+      "type": "tested",
+      "title": "Tay's own testing and notes (the old Witch's Handbook)",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "wiki-beginner-guide",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Beginner Guide",
+      "url": "https://vampire-life.fandom.com/wiki/Beginner_Guide",
+      "rev": 459,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-human",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Human",
+      "url": "https://vampire-life.fandom.com/wiki/Human",
+      "rev": 453,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-vampire",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Vampire",
+      "url": "https://vampire-life.fandom.com/wiki/Vampire",
+      "rev": 494,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "wiki-original-vampire",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Original Vampire",
+      "url": "https://vampire-life.fandom.com/wiki/Original_Vampire",
+      "rev": 422,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-witch",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Witch",
+      "url": "https://vampire-life.fandom.com/wiki/Witch",
+      "rev": 433,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-witch-spells",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Witch Spells",
+      "url": "https://vampire-life.fandom.com/wiki/Witch_Spells",
+      "rev": 508,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "wiki-werewolf",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Werewolf",
+      "url": "https://vampire-life.fandom.com/wiki/Werewolf",
+      "rev": 467,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-original-hybrid",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Original Hybrid",
+      "url": "https://vampire-life.fandom.com/wiki/Original_Hybrid",
+      "rev": 464,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-hybrid",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Hybrid",
+      "url": "https://vampire-life.fandom.com/wiki/Hybrid",
+      "rev": 314,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "wiki-cannibal-vampire",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Cannibal Vampire",
+      "url": "https://vampire-life.fandom.com/wiki/Cannibal_Vampire",
+      "rev": 343,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-cannibal-raised",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Cannibal Raised Vampire",
+      "url": "https://vampire-life.fandom.com/wiki/Cannibal_Raised_Vampire",
+      "rev": 345,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-vegan-vampire",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Vegan Vampire",
+      "url": "https://vampire-life.fandom.com/wiki/Vegan_Vampire",
+      "rev": 426,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "wiki-vampire-hunter",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Vampire Hunter",
+      "url": "https://vampire-life.fandom.com/wiki/Vampire_Hunter",
+      "rev": 392,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-beast-form",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Beast Form Vampire",
+      "url": "https://vampire-life.fandom.com/wiki/Beast_Form_Vampire",
+      "rev": 510,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "wiki-items",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Items",
+      "url": "https://vampire-life.fandom.com/wiki/Items",
+      "rev": 503,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "wiki-mining",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Mining",
+      "url": "https://vampire-life.fandom.com/wiki/Mining",
+      "rev": 491,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "wiki-clash",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Clash",
+      "url": "https://vampire-life.fandom.com/wiki/Clash",
+      "rev": 507,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "wiki-codes",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Codes",
+      "url": "https://vampire-life.fandom.com/wiki/Codes",
+      "rev": 383,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-events",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Events",
+      "url": "https://vampire-life.fandom.com/wiki/Events",
+      "rev": 457,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-game-passes",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Game Passes",
+      "url": "https://vampire-life.fandom.com/wiki/Game_Passes",
+      "rev": 460,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-misconceptions",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Common Misconceptions",
+      "url": "https://vampire-life.fandom.com/wiki/Common_Misconceptions",
+      "rev": 440,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "wiki-private-servers",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Private Servers",
+      "url": "https://vampire-life.fandom.com/wiki/Private_Servers",
+      "rev": 496,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "wiki-sources",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: Sources",
+      "url": "https://vampire-life.fandom.com/wiki/Sources",
+      "rev": 495,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "wiki-map",
+      "type": "wiki",
+      "title": "Vampire Life Wiki: World Map",
+      "url": "https://vampire-life.fandom.com/wiki/Map:Vampire_Life_World_Map",
+      "rev": 390,
+      "date": "2026-10-25"
+    },
+    {
+      "id": "discord",
+      "type": "discord",
+      "title": "Official Vampire Life Discord",
+      "url": "https://discord.com/invite/TUSfpjQaCG"
+    },
+    {
+      "id": "discord-2026-10-15",
+      "type": "discord",
+      "title": "Discord update announcement, 15 Oct 2026 (as quoted on the wiki)",
+      "url": "https://vampire-life.fandom.com/wiki/Sources",
+      "date": "2026-10-15"
+    },
+    {
+      "id": "discord-2026-10-24",
+      "type": "discord",
+      "title": "Discord announcement: Vegan Vampire, 24 Oct 2026 (as quoted on the wiki)",
+      "url": "https://vampire-life.fandom.com/wiki/Sources",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "discord-2026-10-25",
+      "type": "discord",
+      "title": "Discord announcements: Push, Minions, Beast Form Vampire, 25 Oct 2026 (as quoted on the wiki)",
+      "url": "https://vampire-life.fandom.com/wiki/Sources",
+      "date": "2026-10-25"
+    },
+    {
+      "id": "discord-2026-10-26",
+      "type": "discord",
+      "title": "Discord update announcement “Today's Updates — 10/26”, 26 Oct 2026 (as quoted on the wiki)",
+      "url": "https://vampire-life.fandom.com/wiki/Sources",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "discord-owner-hybrid",
+      "type": "discord",
+      "title": "The game owner's statements on Original Hybrid requirements (Discord screenshots on the wiki)",
+      "url": "https://vampire-life.fandom.com/wiki/Sources#Discord_confirmation",
+      "date": "2026-10-23"
+    },
+    {
+      "id": "trello",
+      "type": "trello",
+      "title": "Official Vampire Life Trello board (currently offline; cited by the wiki from a cached copy)"
+    },
+    {
+      "id": "itzvexo-werewolf",
+      "type": "video",
+      "title": "ItzVexo, “How To BE WEREWOLF in Vampire Life!” (video, 18 Oct 2026)",
+      "date": "2026-10-18"
+    },
+    {
+      "id": "robloxpro492-doc",
+      "type": "doc",
+      "title": "Community guide by robloxpro492 (tabmahmud)",
+      "url": "https://docs.google.com/document/d/1Qn5jCohyIT9gdSLdriBsPx6GQnRc3F8fMDF2UljV-j4/edit?tab=t.0"
+    }
+  ]
+}

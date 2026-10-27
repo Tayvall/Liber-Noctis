@@ -1,0 +1,22 @@
+{
+  "id": "natural-born-vampire",
+  "kind": "transformation",
+  "name": "Natural-Born Vampire",
+  "summary": "The gamepass start: a vampire from birth.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-vampire",
+    "wiki-misconceptions"
+  ],
+  "last_updated": "2026-10-27",
+  "from_any": true,
+  "to": "vampire",
+  "method": "Original Vampire game pass",
+  "requirements": [
+    "The [[original-vampire-pass]]."
+  ],
+  "via": [
+    "original-vampire-pass"
+  ],
+  "notes": "Not a spawn choice, and not a 1% random roll."
+}

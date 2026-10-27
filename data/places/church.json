@@ -1,0 +1,20 @@
+{
+  "id": "church",
+  "kind": "place",
+  "name": "Church",
+  "summary": "The church in the first village. Holy ground.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-misconceptions",
+    "wiki-beginner-guide",
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "region": "first-village",
+  "features": [
+    "Humans of Lv 200+ bless their [[cross]] here."
+  ],
+  "dangers": [
+    "Vampires burn here and cannot enter the interior."
+  ]
+}

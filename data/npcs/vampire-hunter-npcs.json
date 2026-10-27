@@ -1,0 +1,18 @@
+{
+  "id": "vampire-hunter-npcs",
+  "kind": "npc",
+  "name": "Hunter NPCs",
+  "summary": "Hunters who stalk the land at fixed levels.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "enemy",
+  "location": [
+    "hunters-lv100-300",
+    "hunters-lv700",
+    "hunters-lv2000"
+  ],
+  "level": "100–2,000, by area"
+}

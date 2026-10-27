@@ -1,0 +1,18 @@
+{
+  "id": "werewolf-npcs",
+  "kind": "npc",
+  "name": "Werewolf NPCs",
+  "summary": "High-level werewolves. Their scratch can turn a Human.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map",
+    "wiki-werewolf"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "enemy",
+  "location": [
+    "werewolves-lv7k"
+  ],
+  "level": "About 7,000",
+  "hostile": true
+}

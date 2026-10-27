@@ -1,0 +1,25 @@
+{
+  "id": "human-to-vampire-infect",
+  "kind": "transformation",
+  "name": "Infected by a Vampire",
+  "summary": "A Lv 150+ vampire can infect a Human directly.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-vampire"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "human"
+  ],
+  "to": "vampire",
+  "method": "Infected by a vampire (Infect, Lv 150)",
+  "steps": [
+    "A vampire of Lv 150 or higher uses **Infect** on you.",
+    "Bite an NPC or player who is not already a vampire.",
+    "You transform."
+  ],
+  "requirements": [
+    "The vampire must be Lv 150 or higher."
+  ],
+  "when": "After your first bite"
+}

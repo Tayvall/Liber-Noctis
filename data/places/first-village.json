@@ -1,0 +1,17 @@
+{
+  "id": "first-village",
+  "kind": "place",
+  "name": "First Village",
+  "summary": "The first of the two villages, and the start of most journeys.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map",
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "map": {
+    "x": 36.0,
+    "y": 27.7
+  },
+  "pin": "village"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "clash",
+  "kind": "article",
+  "name": "Clash",
+  "summary": "A timed skill check when two fighters meet blow for blow.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-clash",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "combat",
+  "sections": [
+    {
+      "heading": "The skill check",
+      "body": "A bar appears with **CLICK & HOLD M1**. While your marker is outside the target zone the bar reads *OFF TARGET*. Each side builds up seconds (for example YOU 0.9 s, OPPONENT 1.0 s); whoever has more when the timer runs out wins."
+    },
+    {
+      "heading": "Level range",
+      "body": "Clashes happen in PvP and PvE. There is no clash across a level gap of 500 or more."
+    }
+  ],
+  "disputed": [
+    "Whether a much higher player can still force a clash on a lower one, leaving them no clash defence, is unknown."
+  ]
+}

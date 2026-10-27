@@ -1,0 +1,20 @@
+{
+  "id": "shotgun",
+  "kind": "item",
+  "name": "Shotgun",
+  "summary": "Fires wooden pellets at vampires.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-human",
+    "trello"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "weapon",
+  "effect": "8 rounds of wooden pellets. A headshot decapitates.",
+  "disputed": [
+    "The cached Trello lists its price as both $900 and $600."
+  ],
+  "tbc": [
+    "obtain"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "sun-ring-pass",
+  "kind": "gamepass",
+  "name": "Sun Ring",
+  "summary": "Sun immunity for good, plus bonuses.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-game-passes",
+    "wiki-original-vampire"
+  ],
+  "last_updated": "2026-10-27",
+  "grants": [
+    "Immunity to the sun",
+    "Strength and speed bonuses",
+    "Unlimited double XP"
+  ],
+  "notes": "It unlocks no other powers. For a crafted ring, see [[temporary-sun-ring]].",
+  "robux": 695,
+  "robux_premium": 626
+}

@@ -1,0 +1,20 @@
+{
+  "id": "vampire-to-cannibal",
+  "kind": "transformation",
+  "name": "Vampire to Cannibal",
+  "summary": "Drink another vampire's blood.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-cannibal-vampire"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "vampire"
+  ],
+  "to": "cannibal-vampire",
+  "method": "Drinking another vampire's blood",
+  "steps": [
+    "Bite another vampire and drink."
+  ],
+  "chance": "5% per bite"
+}

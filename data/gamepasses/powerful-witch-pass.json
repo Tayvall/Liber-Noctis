@@ -1,0 +1,21 @@
+{
+  "id": "powerful-witch-pass",
+  "kind": "gamepass",
+  "name": "Powerful Witch",
+  "summary": "More magic for witches, according to the old Trello.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-witch",
+    "trello"
+  ],
+  "last_updated": "2026-10-27",
+  "grants": [
+    "More magic",
+    "See ghosts",
+    "Revive yourself"
+  ],
+  "disputed": [
+    "Only the old Trello lists this pass; it is not on the wiki's Game Passes page."
+  ],
+  "robux": 65
+}

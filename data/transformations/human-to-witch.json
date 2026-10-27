@@ -1,0 +1,27 @@
+{
+  "id": "human-to-witch",
+  "kind": "transformation",
+  "name": "Human to Witch",
+  "summary": "Find a Grimoire in the woods and make a pact.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-witch",
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "human"
+  ],
+  "to": "witch",
+  "method": "A pact with a Grimoire",
+  "steps": [
+    "Search [[the-woods]] for a [[grimoire]]. They spawn at random.",
+    "Hold the **Make Pact** prompt.",
+    "You respawn as a Witch at Lv 0."
+  ],
+  "when": "On respawn",
+  "via": [
+    "grimoire"
+  ],
+  "notes": "No grinding needed beforehand."
+}

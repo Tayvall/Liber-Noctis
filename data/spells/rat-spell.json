@@ -1,0 +1,19 @@
+{
+  "id": "rat-spell",
+  "kind": "spell",
+  "name": "Rat Spell",
+  "summary": "The Rat Alchemist's reward: a potion that turns a witch into a rat.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "form": "granted",
+  "caster": {
+    "race": "witch",
+    "level": 800
+  },
+  "unlock": "Complete the [[rat-alchemist]]'s quest.",
+  "effect": "Turns you into a rat.",
+  "duration": "Up to 5 minutes per use, 20 uses"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "sorrybugsadm",
+  "kind": "code",
+  "name": "SORRYBUGSADM",
+  "summary": "Sources disagree on whether this still works.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-codes"
+  ],
+  "last_updated": "2026-10-27",
+  "code": "SORRYBUGSADM",
+  "status": "disputed",
+  "checked": "2026-10-25",
+  "tbc": [
+    "reward"
+  ]
+}

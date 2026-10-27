@@ -1,0 +1,26 @@
+{
+  "id": "cannibal-raised-vampire",
+  "kind": "race",
+  "name": "Cannibal Raised Vampire",
+  "summary": "A cannibal's strength with none of the cannibal's diet: drinks anything, keeps its status.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-cannibal-raised",
+    "wiki-misconceptions"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "variant",
+  "parent": "vampire",
+  "origin": "earned",
+  "type_line": "Vampire variant",
+  "blood": "Any blood, without losing status.",
+  "strengths": [
+    "All stats about 20% higher, like a Cannibal",
+    "No feeding restriction"
+  ],
+  "weaknesses": [
+    "Sunlight and stakes, as for every vampire",
+    "Becoming one resets your level"
+  ],
+  "notes": "What happens on the transformations that miss the 1% is not confirmed."
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ore-buyer",
+  "kind": "npc",
+  "name": "Ore Buyer",
+  "summary": "Buys your ore in lots of sixty.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-mining"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "buyer",
+  "location": [
+    "first-village",
+    "second-village"
+  ],
+  "buys": [
+    {
+      "item": "coal",
+      "qty": 60,
+      "price": 4000
+    },
+    {
+      "item": "silver",
+      "qty": 60,
+      "price": 6000
+    },
+    {
+      "item": "ruby",
+      "qty": 60,
+      "price": 9000
+    }
+  ]
+}

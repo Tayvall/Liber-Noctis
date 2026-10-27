@@ -1,0 +1,28 @@
+{
+  "id": "witch-house",
+  "kind": "place",
+  "name": "Witch House",
+  "summary": "Witch spawn, and home of the Magic Cauldron.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map",
+    "wiki-witch",
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "region": "cemetery",
+  "aka": [
+    "Graveyard Altar"
+  ],
+  "stations": [
+    "Magic Cauldron"
+  ],
+  "features": [
+    "Every witch craft is made at the cauldron inside."
+  ],
+  "map": {
+    "x": 8.8,
+    "y": 85.2
+  },
+  "pin": "base"
+}

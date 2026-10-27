@@ -1,0 +1,19 @@
+{
+  "id": "original-vampire-pass",
+  "kind": "gamepass",
+  "name": "Original Vampire (ANTICIPATED)",
+  "summary": "The only way to become an Original Vampire.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-game-passes",
+    "wiki-misconceptions"
+  ],
+  "last_updated": "2026-10-27",
+  "grants": [
+    "[[original-vampire]] status",
+    "The Natural-Born [[vampire]] start"
+  ],
+  "notes": "It is 1,895 Robux, not 1,800.",
+  "robux": 1895,
+  "robux_premium": 1706
+}

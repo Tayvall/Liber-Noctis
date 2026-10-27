@@ -1,0 +1,22 @@
+{
+  "id": "redeeming-codes",
+  "kind": "article",
+  "name": "Redeeming Codes",
+  "summary": "Free boosts and cash, while they last.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-codes"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "codes",
+  "sections": [
+    {
+      "heading": "How to redeem",
+      "body": "Settings cogwheel (top of the screen) → **Codes** tab → *ENTER CODE* box → **Redeem**. Codes are case-sensitive."
+    },
+    {
+      "heading": "A warning",
+      "body": "Codes expire without warning. Each one below shows the date it was last checked. Try them, but don't count on them."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "silver-bar",
+  "kind": "recipe",
+  "name": "Silver Bar",
+  "summary": "Silver smelted with coal, for stakes and blades.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-mining"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "material",
+  "made_at": "blacksmiths-forge",
+  "ingredients": [
+    {
+      "item": "silver",
+      "qty": 1
+    }
+  ],
+  "fuel": [
+    {
+      "item": "coal",
+      "qty": 4
+    }
+  ],
+  "steps": [
+    "Press **E** at the forge.",
+    "Choose Silver, then press **SMELT**."
+  ]
+}

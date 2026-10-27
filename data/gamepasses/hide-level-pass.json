@@ -1,0 +1,23 @@
+{
+  "id": "hide-level-pass",
+  "kind": "gamepass",
+  "name": "Hide your level and team",
+  "summary": "For role-play: hide your level and team.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-game-passes"
+  ],
+  "last_updated": "2026-10-27",
+  "commands": [
+    {
+      "cmd": "/hide",
+      "does": "Hide your level and team"
+    },
+    {
+      "cmd": "/unhide",
+      "does": "Show them again"
+    }
+  ],
+  "robux": 395,
+  "robux_premium": 356
+}

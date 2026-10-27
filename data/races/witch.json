@@ -1,0 +1,161 @@
+{
+  "id": "witch",
+  "kind": "race",
+  "name": "Witch",
+  "summary": "The spellcasting path: walks by day, brews at the Magic Cauldron and climbs from Novice to Scarce.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-witch",
+    "wiki-witch-spells",
+    "discord-2026-10-25"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "playable",
+  "origin": "earned",
+  "type_line": "Sworn by pact, not bitten",
+  "daylight": "Safe. Witches walk in daylight.",
+  "blood": "None. Witches use a Magic meter instead.",
+  "starts_with": [
+    "Level 0 and a *Witches* badge",
+    "The spell Incendia",
+    "A passive ability [TBC]"
+  ],
+  "abilities": [
+    {
+      "name": "Fists",
+      "starting": true,
+      "effect": "Your hand glows purple and throws magic orbs at medium range."
+    },
+    {
+      "name": "Soul Drain",
+      "key": "R",
+      "starting": true,
+      "cooldown": "38 s",
+      "effect": "Lift the target and drain its soul for heavy damage, healing you by the damage dealt."
+    },
+    {
+      "name": "Petrification",
+      "key": "F",
+      "level": 15,
+      "cooldown": "25 s",
+      "effect": "Turn the target to stone.",
+      "targets": "NPCs and players"
+    },
+    {
+      "name": "Strength",
+      "level": 25,
+      "cooldown": "38 s",
+      "spell": "strength",
+      "effect": "Chat-cast. See [[strength]]."
+    },
+    {
+      "name": "Invisibility",
+      "key": "V",
+      "level": 25,
+      "effect": "Vanish and move faster. You can still be hit."
+    },
+    {
+      "name": "Break Neck",
+      "key": "Q",
+      "level": 50,
+      "cooldown": "15 s",
+      "effect": "Levitate the target, then break its neck.",
+      "targets": "NPCs and players"
+    },
+    {
+      "name": "Heart Extraction",
+      "key": "X",
+      "level": 100,
+      "cooldown": "90 s",
+      "effect": "Rip out a [[heart]]. Eating it grants one extra life against a lethal attack."
+    },
+    {
+      "name": "Pain Infliction",
+      "key": "B",
+      "level": 140,
+      "cooldown": "35 s",
+      "effect": "Torment the target. Run out of mana while using it and you start taking damage."
+    },
+    {
+      "name": "Telekinesis",
+      "key": "G",
+      "level": 300,
+      "effect": "Lift, carry and hurl another player from a distance."
+    },
+    {
+      "name": "Beam",
+      "key": "J",
+      "effect": "A beam attack. [TBC] unlock level."
+    },
+    {
+      "name": "Push",
+      "key": "N",
+      "effect": "Pushes several players at once. [TBC] unlock level."
+    }
+  ],
+  "ranks": [
+    {
+      "name": "Novice",
+      "from": 0,
+      "to": 24
+    },
+    {
+      "name": "Adept",
+      "from": 25,
+      "to": 49
+    },
+    {
+      "name": "Gifted",
+      "from": 50,
+      "to": 74
+    },
+    {
+      "name": "Powerful",
+      "from": 75,
+      "to": 99
+    },
+    {
+      "name": "Elder",
+      "from": 100,
+      "to": 399
+    },
+    {
+      "name": "Ancient",
+      "from": 400,
+      "to": 799
+    },
+    {
+      "name": "Scarce",
+      "from": 800
+    }
+  ],
+  "clan": {
+    "name": "Coven",
+    "body": "Witches form covens: the witch's answer to bloodlines and packs."
+  },
+  "strengths": [
+    "A ranged spell kit",
+    "Free to walk in daylight",
+    "A clear ladder of ranks",
+    "The Supreme Witch bonuses"
+  ],
+  "weaknesses": [
+    "Managing the Magic meter",
+    "Spells can backfire at high levels (a skill check against stronger foes)",
+    "Grimoires spawn at random"
+  ],
+  "sections": [
+    {
+      "heading": "Supreme Witch",
+      "body": "The highest-level witch on a server holds the **Supreme Witch** title: +10% magic damage, +10% Strength potency and duration, and +10% petrification duration, with no extra mana cost."
+    },
+    {
+      "heading": "Casting",
+      "body": "Spells need five [[candle|candles]] from the [[witch-shop]]. Crafting is done at the Magic Cauldron in the [[witch-house]]. The [[grimoire]] is how you join, not how you cast."
+    }
+  ],
+  "disputed": [
+    "The name of the 800+ rank, *Scarce*, is unconfirmed."
+  ],
+  "notes": "A *Powerful Witch* game pass appears on the old Trello: see [[powerful-witch-pass]]."
+}

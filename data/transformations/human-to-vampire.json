@@ -1,0 +1,28 @@
+{
+  "id": "human-to-vampire",
+  "kind": "transformation",
+  "name": "Human to Vampire",
+  "summary": "Die with vampire blood in your veins, then drink.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-beginner-guide",
+    "wiki-misconceptions"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "human"
+  ],
+  "to": "vampire",
+  "method": "Vampire blood, death, then fresh blood",
+  "steps": [
+    "Get [[vampire-blood]] into your system.",
+    "Die while it is still active.",
+    "Drink fresh blood or a blood bag to complete the change."
+  ],
+  "when": "As soon as you drink",
+  "via": [
+    "vampire-blood"
+  ],
+  "notes": "Neither just dying nor just being bitten is enough: you need all three steps.",
+  "featured": true
+}

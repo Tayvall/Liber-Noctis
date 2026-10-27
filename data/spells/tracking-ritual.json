@@ -1,0 +1,43 @@
+{
+  "id": "tracking-ritual",
+  "kind": "spell",
+  "name": "Tracking Ritual",
+  "summary": "Candles, a heart and a name: find anyone on the map.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "aka": [
+    "Locate Spell",
+    "Location Spell"
+  ],
+  "form": "ritual",
+  "incantation": "Quaerere <username>",
+  "caster": {
+    "race": "witch"
+  },
+  "components": [
+    {
+      "item": "candle",
+      "qty": 3,
+      "note": "you may place up to 5, but 3 trigger it"
+    },
+    {
+      "item": "heart",
+      "qty": 1
+    }
+  ],
+  "setup": [
+    "Place three candles in a triangle.",
+    "Hold the heart and click the ground inside the candles, so the heart sits in the middle.",
+    "Say the incantation with the player's username."
+  ],
+  "effect": "Tracks and spies on the named player.",
+  "tbc": [
+    "caster.level",
+    "duration",
+    "cooldown"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "level-grinding-ritual",
+  "kind": "spell",
+  "name": "Level Grinding Ritual",
+  "summary": "Five candles in a star, and the levels come to you.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "form": "ritual",
+  "caster": {
+    "race": "witch"
+  },
+  "components": [
+    {
+      "item": "candle",
+      "qty": 5
+    }
+  ],
+  "setup": [
+    "Arrange five candles in the shape of a star."
+  ],
+  "effect": "You gain 1 level every 15 minutes while it stands.",
+  "tbc": [
+    "caster.level"
+  ]
+}

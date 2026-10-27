@@ -1,0 +1,87 @@
+{
+  "id": "original-hybrid",
+  "kind": "race",
+  "name": "Original Hybrid",
+  "summary": "Half vampire, half werewolf: both kits in one body, with no sun-burning. Rare by design.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-original-hybrid",
+    "wiki-sources",
+    "discord-owner-hybrid",
+    "discord-2026-10-26"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "playable",
+  "origin": "turned",
+  "type_line": "Half vampire, half werewolf",
+  "daylight": "Safe. Original Hybrids do not burn in the sun.",
+  "blood": "Drinks blood (E), like a vampire.",
+  "abilities": [
+    {
+      "name": "Heart Rip",
+      "key": "X"
+    },
+    {
+      "name": "Sleep",
+      "key": "B"
+    },
+    {
+      "name": "Track",
+      "key": "F"
+    },
+    {
+      "name": "Break Neck",
+      "key": "V"
+    },
+    {
+      "name": "Drink Blood",
+      "key": "E"
+    },
+    {
+      "name": "Hypnotize",
+      "key": "C"
+    },
+    {
+      "name": "Infect",
+      "key": "R"
+    },
+    {
+      "name": "Barrage",
+      "key": "LeftControl"
+    },
+    {
+      "name": "Ground Slam",
+      "key": "L1+Up"
+    },
+    {
+      "name": "Head Rip",
+      "key": "H"
+    },
+    {
+      "name": "Pierce Organs",
+      "key": "T"
+    },
+    {
+      "name": "Bat Swarm",
+      "key": "Q"
+    },
+    {
+      "name": "Wolf Form",
+      "key": "L1+Right"
+    }
+  ],
+  "strengths": [
+    "Two full ability kits",
+    "No weakness to sunlight"
+  ],
+  "weaknesses": [
+    "Very hard to get: see *Becoming one*",
+    "A high-priority target"
+  ],
+  "notes": "A video report describes it as a vampire in normal form and a werewolf in beast form. The Original Hybrid's [[coffin]] grants the level reward, and switching from Hybrid to an Original slot can be reverted if a slot is saved.",
+  "tbc": [
+    "abilities.effect",
+    "abilities.level",
+    "abilities.cooldown"
+  ]
+}

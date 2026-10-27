@@ -1,0 +1,42 @@
+{
+  "id": "sanguis-tuus-vita-mea",
+  "kind": "spell",
+  "name": "Sanguis Tuus Vita Mea",
+  "summary": "“Your blood, my life”: a witch binds her life to an Original Vampire's.",
+  "trust": "tested",
+  "sources": [
+    "tay",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "aka": [
+    "Immortality Spell"
+  ],
+  "form": "spoken",
+  "incantation": "Sanguis tuus vita mea",
+  "caster": {
+    "race": "witch",
+    "level": 2000
+  },
+  "setup": [
+    "Click on an Original Vampire while you say it."
+  ],
+  "effect": "Links your life to the Original's, protecting them.",
+  "cooldown": "20 min, counted from when the spell ends",
+  "works_on": [
+    {
+      "race": "original-vampire",
+      "works": true,
+      "trust": "tested"
+    },
+    {
+      "race": "vampire",
+      "works": false,
+      "trust": "tested"
+    }
+  ],
+  "notes": "It works **only** on Original Vampires.",
+  "tbc": [
+    "duration"
+  ]
+}

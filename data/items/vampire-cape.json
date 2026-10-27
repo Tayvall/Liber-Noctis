@@ -1,0 +1,16 @@
+{
+  "id": "vampire-cape",
+  "kind": "item",
+  "name": "Vampire Cape",
+  "summary": "Named as sun protection for vampires.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-beginner-guide"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "trinket",
+  "effect": "Protection from sunlight.",
+  "tbc": [
+    "obtain"
+  ]
+}

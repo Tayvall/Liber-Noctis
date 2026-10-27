@@ -1,0 +1,39 @@
+{
+  "id": "magic-colour-change",
+  "kind": "recipe",
+  "name": "Magic Colour Change",
+  "summary": "Recolour your witch magic for good.",
+  "trust": "tested",
+  "sources": [
+    "tay",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "aka": [
+    "Change Spell Colour",
+    "Witch Magic Color Change"
+  ],
+  "category": "charm",
+  "rarity": "legendary",
+  "made_at": "witch-house",
+  "effect": "Permanently changes the colour of your witch magic to the fragment's colour.",
+  "ingredients": [
+    {
+      "item": "colored-fragment",
+      "qty": 1,
+      "note": "the colour you want"
+    },
+    {
+      "item": "heart",
+      "qty": 1
+    },
+    {
+      "item": "ruby",
+      "qty": 1,
+      "note": "raw ore, mined"
+    }
+  ],
+  "steps": [
+    "Place the three items in the cauldron."
+  ]
+}

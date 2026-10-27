@@ -1,0 +1,17 @@
+{
+  "id": "beast-form-vampire",
+  "kind": "npc",
+  "name": "Beast Form Vampire",
+  "summary": "A rare, wingless giant bat of a vampire, worth a fortune in XP.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-beast-form",
+    "discord-2026-10-25"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "enemy",
+  "level": "8,000–12,000",
+  "hostile": true,
+  "spawn": "Donate blood to a vampire hunter NPC and there is a small chance it suddenly feeds on another hunter or a nearby human NPC, and transforms.",
+  "notes": "Kill it to grind XP. It is extremely rare."
+}

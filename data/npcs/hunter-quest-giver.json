@@ -1,0 +1,28 @@
+{
+  "id": "hunter-quest-giver",
+  "kind": "npc",
+  "name": "Vampire Hunter quest giver",
+  "summary": "Offers Humans the Vampire Hunter quest.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-vampire-hunter"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "quest",
+  "location": [
+    "windmill-tower"
+  ],
+  "quest": {
+    "requires": [
+      "Be [[human]]."
+    ],
+    "objectives": [
+      "Complete the Vampire Hunter quest. [TBC]"
+    ],
+    "rewards": [
+      "The [[vampire-hunter]] sub-race",
+      "Neck Snap and Barrage",
+      "A [[throwing-knife]]"
+    ]
+  }
+}

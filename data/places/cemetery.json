@@ -1,0 +1,12 @@
+{
+  "id": "cemetery",
+  "kind": "place",
+  "name": "Cemetery",
+  "summary": "The graveyard, with the Witch House inside it.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-witch",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27"
+}

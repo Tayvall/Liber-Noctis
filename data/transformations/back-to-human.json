@@ -1,0 +1,28 @@
+{
+  "id": "back-to-human",
+  "kind": "transformation",
+  "name": "Back to Human",
+  "summary": "A potion from the first village undoes your choice.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-beginner-guide",
+    "wiki-human",
+    "wiki-werewolf",
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "vampire",
+    "witch",
+    "werewolf"
+  ],
+  "to": "human",
+  "method": "A Human Potion",
+  "steps": [
+    "Buy a [[human-potion]] at the [[general-shop]] in the [[first-village]].",
+    "Drink it."
+  ],
+  "via": [
+    "human-potion"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "original-vampire",
+  "kind": "race",
+  "name": "Original Vampire",
+  "summary": "The top of the food chain. The sun can hurt an Original but never kill one; only a White Oak Stake can.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-original-vampire",
+    "wiki-misconceptions"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "playable",
+  "origin": "gamepass",
+  "type_line": "Bought, never bitten",
+  "daylight": "Sunlight burns but cannot kill. Originals are immortal to the sun.",
+  "blood": "Drinks blood (E).",
+  "abilities": [
+    {
+      "name": "Heart Rip",
+      "key": "X"
+    },
+    {
+      "name": "Sleep",
+      "key": "B"
+    },
+    {
+      "name": "Break Neck",
+      "key": "V"
+    },
+    {
+      "name": "Drink Blood",
+      "key": "E"
+    },
+    {
+      "name": "Hypnotize",
+      "key": "C"
+    },
+    {
+      "name": "Infect",
+      "key": "R"
+    },
+    {
+      "name": "Track",
+      "key": "F"
+    },
+    {
+      "name": "Bat Form",
+      "key": "G",
+      "level": 2000
+    },
+    {
+      "name": "Barrage",
+      "key": "Ctrl+M1"
+    },
+    {
+      "name": "Head Rip",
+      "key": "H"
+    },
+    {
+      "name": "Pierce Organs",
+      "key": "T"
+    },
+    {
+      "name": "Bat Swarm",
+      "key": "Q",
+      "level": 600
+    }
+  ],
+  "strengths": [
+    "The best stats in the game",
+    "Commands a sire line: vampires it turns share its bloodline",
+    "Compulsion over normal vampires",
+    "Faster and stronger than a normal vampire"
+  ],
+  "weaknesses": [
+    "The [[white-oak-stake]], the only thing that can kill it",
+    "Everyone wants the kill"
+  ],
+  "sections": [
+    {
+      "heading": "Staying alive",
+      "body": "- [[inhuman-potion]]: immunity to the [[white-oak-ash-dagger]] for 5 hours\n- [[sanguis-tuus-vita-mea]]: a witch links her life to yours\n- Sun damage: [[sun-ring-pass]], [[temporary-sun-ring]] or [[vampire-hat]]"
+    }
+  ],
+  "tbc": [
+    "abilities.effect",
+    "abilities.cooldown"
+  ]
+}

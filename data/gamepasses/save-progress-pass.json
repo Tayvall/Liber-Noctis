@@ -1,0 +1,17 @@
+{
+  "id": "save-progress-pass",
+  "kind": "gamepass",
+  "name": "Save Progress",
+  "summary": "Swap race and keep your levels.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-game-passes"
+  ],
+  "last_updated": "2026-10-27",
+  "grants": [
+    "Swap to a different race while keeping your levels and progress"
+  ],
+  "notes": "The button is at the bottom right of the screen.",
+  "robux": 495,
+  "robux_premium": 446
+}

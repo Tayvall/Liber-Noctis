@@ -1,0 +1,43 @@
+{
+  "chapters": [
+    { "id": "races", "numeral": "I", "ordinal": "First", "title": "Races",
+      "intro": "Every soul in the Realm wakes as a Human, but few stay one. Here are the six bloodlines: how each one is entered and left, what it can do, and what will kill it.",
+      "sections": [
+        { "id": "humans", "title": "Humans", "races": ["human"] },
+        { "id": "vampires", "title": "Vampires", "races": ["vampire"] },
+        { "id": "originals", "title": "Original Vampires", "races": ["original-vampire"] },
+        { "id": "witches", "title": "Witches", "races": ["witch"] },
+        { "id": "werewolves", "title": "Werewolves", "races": ["werewolf"] },
+        { "id": "hybrids", "title": "Hybrids", "races": ["original-hybrid", "hybrid"] } ] },
+    { "id": "grimoire", "numeral": "II", "ordinal": "Second", "title": "The Grimoire",
+      "intro": "Words spoken into the dark, draughts brewed at the cauldron, and candles set in shapes older than the villages. Most of what follows is the craft of witches.",
+      "sections": [
+        { "id": "spells", "title": "Spells", "match": [{ "kind": "spell", "form": ["spoken", "granted"] }] },
+        { "id": "potions", "title": "Potions", "match": [{ "kind": "recipe", "category": ["potion"] }] },
+        { "id": "rituals", "title": "Rituals", "match": [{ "kind": "spell", "form": ["ritual"] }] } ] },
+    { "id": "items", "title": "Items & Alchemy", "numeral": "III", "ordinal": "Third",
+      "intro": "What can be found, mined, bought or made, and what each thing is good for. Bought prices are on the merchant's page; a thing's page tells you who sells it and what it goes into.",
+      "sections": [
+        { "id": "ingredients", "title": "Ingredients", "match": [{ "kind": "item", "category": ["ingredient", "ore"] }, { "kind": "recipe", "category": ["material"] }] },
+        { "id": "weapons", "title": "Weapons", "match": [{ "kind": "item", "category": ["weapon"] }, { "kind": "recipe", "category": ["weapon"] }] },
+        { "id": "trinkets", "title": "Trinkets & Tools", "match": [{ "kind": "item", "category": ["trinket", "tool", "consumable", "food", "furniture"] }, { "kind": "recipe", "category": ["trinket", "charm"] }] } ] },
+    { "id": "realm", "title": "The Realm", "numeral": "IV", "ordinal": "Fourth",
+      "intro": "Two villages, a castle, a den and a graveyard, and the roads and woods between them. The map is followed by every place and by the folk you will meet there.",
+      "sections": [
+        { "id": "map", "title": "The Map", "map": true },
+        { "id": "places", "title": "Places", "match": [{ "kind": "place" }] },
+        { "id": "folk", "title": "Merchants & Folk", "match": [{ "kind": "npc" }] } ] },
+    { "id": "workings", "title": "Workings of the World", "numeral": "V", "ordinal": "Fifth",
+      "intro": "The rules beneath it all: how levels come, what the sun and moon do, how fights are settled, and the codes and passes that bend the rules a little.",
+      "sections": [
+        { "id": "levels", "title": "Levels & XP", "match": [{ "kind": "article", "section": ["levels"] }] },
+        { "id": "life", "title": "Death & Starting Over", "match": [{ "kind": "article", "section": ["life"] }] },
+        { "id": "sun", "title": "Day, Night & the Sun", "match": [{ "kind": "article", "section": ["sun"] }] },
+        { "id": "moon", "title": "The Moon & Events", "match": [{ "kind": "article", "section": ["moon"] }] },
+        { "id": "combat", "title": "Combat", "match": [{ "kind": "article", "section": ["combat"] }] },
+        { "id": "gathering", "title": "Mining & Smelting", "match": [{ "kind": "article", "section": ["gathering"] }] },
+        { "id": "passes", "title": "Game Passes & Servers", "match": [{ "kind": "gamepass" }, { "kind": "article", "section": ["passes"] }] },
+        { "id": "codes", "title": "Codes", "match": [{ "kind": "article", "section": ["codes"] }, { "kind": "code" }] },
+        { "id": "myths", "title": "Common Misconceptions", "match": [{ "kind": "article", "section": ["myths"] }] } ] }
+  ]
+}

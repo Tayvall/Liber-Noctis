@@ -1,0 +1,19 @@
+{
+  "id": "werewolves-lv7k",
+  "kind": "place",
+  "name": "Werewolf grounds (Lv 7,000)",
+  "summary": "Where high-level werewolf NPCs roam.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-map"
+  ],
+  "last_updated": "2026-10-27",
+  "dangers": [
+    "Werewolf NPCs of about Lv 7,000: strong enough to infect a Human."
+  ],
+  "map": {
+    "x": 26.0,
+    "y": 61.6
+  },
+  "pin": "enemies"
+}

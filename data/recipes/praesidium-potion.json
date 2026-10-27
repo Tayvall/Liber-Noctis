@@ -1,0 +1,39 @@
+{
+  "id": "praesidium-potion",
+  "kind": "recipe",
+  "name": "Praesidium Potion",
+  "summary": "A remedy that shields the drinker from a vampire's fangs.",
+  "trust": "tested",
+  "sources": [
+    "tay",
+    "wiki-witch-spells"
+  ],
+  "last_updated": "2026-10-27",
+  "aka": [
+    "Praesidium"
+  ],
+  "category": "potion",
+  "rarity": "rare",
+  "made_at": "witch-house",
+  "effect": "Immunity to neck snaps and vampire bites.",
+  "duration": "20 min with a [[blood-cup]] · 40 min with a [[blood-dish]]",
+  "ingredients": [
+    {
+      "any_of": [
+        "blood-cup",
+        "blood-dish"
+      ],
+      "qty": 1
+    },
+    {
+      "item": "verbena",
+      "qty": 1
+    }
+  ],
+  "steps": [
+    "Have a vampire fill a cup or dish with blood.",
+    "Combine it with a verbena flower at the cauldron.",
+    "Say “Praesidium!” in chat when you use it."
+  ],
+  "notes": "The old handbook says it protects the witch who drinks it."
+}

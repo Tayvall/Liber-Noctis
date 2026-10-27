@@ -1,0 +1,30 @@
+{
+  "id": "death-and-reset",
+  "kind": "article",
+  "name": "Death & Starting Over",
+  "summary": "What happens when you die, and how to begin again.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-misconceptions",
+    "wiki-beginner-guide",
+    "wiki-game-passes",
+    "discord-2026-10-26",
+    "wiki-cannibal-raised"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "life",
+  "sections": [
+    {
+      "heading": "Death",
+      "body": "There is no ghost state. When you die, you simply respawn. Eating a [[heart]] grants one extra life against a lethal attack."
+    },
+    {
+      "heading": "Changing race",
+      "body": "- A [[human-potion]] turns you back into a Human.\n- The [[save-progress-pass]] lets you swap race and keep your levels.\n- Becoming a [[cannibal-raised-vampire]] resets your level."
+    },
+    {
+      "heading": "Recovering data",
+      "body": "`/recoverydata` searches back 14 days, and the team-swap log keeps your level in the right slot."
+    }
+  ]
+}

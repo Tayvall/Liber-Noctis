@@ -1,0 +1,22 @@
+{
+  "id": "vegan-vampire",
+  "kind": "race",
+  "name": "Vegan Vampire",
+  "summary": "A tag for the vampire who feeds only on rats.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-vegan-vampire",
+    "discord-2026-10-24"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "variant",
+  "parent": "vampire",
+  "origin": "earned",
+  "type_line": "Vampire subspecies",
+  "blood": "Rats only.",
+  "notes": "It works like the Cannibal Vampire system. Announced on the Discord on 24 October 2026.",
+  "tbc": [
+    "strengths",
+    "weaknesses"
+  ]
+}
