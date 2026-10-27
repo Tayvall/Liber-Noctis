@@ -1,3 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!! THIS IS JUST TO HELP ME REMEMBER GIT COMMANDS, CLAUDE MADE THIS TO HELP ME PLEASE IGNORE !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 LIBER NOCTIS: GIT COMMANDS
 ==========================
 
@@ -12,9 +44,7 @@ Day-to-day work happens on the "dev" branch. "main" is what gets published
 Install git and the GitHub CLI tool ("gh"):
 
     CachyOS / Arch:   sudo pacman -S git github-cli
-    Windows:          winget install Git.Git GitHub.cli
-    macOS:            brew install git gh
-
+    
 Log in to GitHub through gh. This replaces passwords: GitHub doesn't
 accept your account password for git any more.
 
@@ -27,7 +57,7 @@ accept your account password for git any more.
 Tell git who you are (once per device):
 
     git config --global user.name "Tay"
-    git config --global user.email "tatelaird@gmail.com"
+    git config --global user.email "126823979+Tayvall@users.noreply.github.com"
 
 Download the project and switch to the dev branch:
 
@@ -170,3 +200,88 @@ Which branch am I on?
 History of recent commits:
 
     git log --oneline -10
+
+
+-----------------------------------------------------------------
+7. MAKING THE REPO PUBLIC AND TURNING ON THE WEBSITE (once)
+-----------------------------------------------------------------
+
+The website is built by GitHub Pages from the "main" branch, using the
+GitHub Action in .github/workflows/pages.yml. On a free account Pages
+only works on PUBLIC repos, so the repo has to be public first.
+
+--- Before you flip it: check there's nothing private in it ---
+
+Public means EVERYONE can see EVERY branch (dev too, with DevTools) and
+the WHOLE history, including files you deleted in later commits.
+
+    git status                   (nothing half-finished lying around)
+    git log --oneline --all      (every commit that will become visible)
+    git log --all -p -i -G "password|token|secret|api_key"
+                                 (searches all history for secrets;
+                                  no output = nothing found; q to quit)
+
+If a secret IS in the history, deleting the file is not enough: change
+the password/key itself before going public.
+
+--- Step 1: make the repo public ---
+
+  Website way:
+    github.com/Tayvall/Liber-Noctis -> Settings -> General ->
+    scroll to the bottom "Danger Zone" -> Change visibility ->
+    Change to public -> type the repo name to confirm.
+
+  Terminal way:
+    gh repo view --json visibility          (shows PRIVATE or PUBLIC)
+    gh repo edit --visibility public --accept-visibility-change-consequences
+    gh repo view --json visibility          (should now say PUBLIC)
+
+  Changed your mind? Same command with "private" puts it back.
+  (Stars and watchers are lost when you go private, nothing else.)
+
+--- Step 2: turn on Pages, built by the Action ---
+
+  Website way:
+    Settings -> Pages -> "Build and deployment" -> Source:
+    pick "GitHub Actions" (NOT "Deploy from a branch").
+
+  Terminal way:
+    gh api -X POST repos/Tayvall/Liber-Noctis/pages -f build_type=workflow
+    (if it says Pages already exists, switch it to the Action instead:)
+    gh api -X PUT  repos/Tayvall/Liber-Noctis/pages -f build_type=workflow
+
+  Check the setting stuck:
+    gh api repos/Tayvall/Liber-Noctis/pages --jq '.build_type, .html_url'
+    -> should print "workflow" and the site address.
+
+--- Step 3: publish something ---
+
+Nothing is published until the Action runs on main. Either do the
+merge from section 4, or re-run the last main build by hand:
+
+    gh workflow run pages.yml --ref main
+
+  (Website way: Actions tab -> "Check and publish" -> Run workflow ->
+   Branch: main -> Run workflow.)
+
+--- Step 4: check the build worked ---
+
+    gh run list --workflow pages.yml --limit 5
+                                 (newest first; look for "completed
+                                  success" on a main run)
+    gh run watch                 (pick a run; live progress until it ends)
+    gh run view --log-failed     (pick a failed run; shows only the
+                                  lines that broke, usually check.py
+                                  listing a bad id or link)
+
+  Website way: the Actions tab. Green tick = published, red X = not
+  published (the old site stays up). Click the run to see why.
+
+  Runs on dev only do the "check" job; only main runs do "deploy".
+  That's expected, not a failure.
+
+--- Step 5: check the website is actually up ---
+
+The address is:
+
+    https://tayvall.github.io/Liber-Noctis/
