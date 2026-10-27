@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/transformation.schema.json",
+  "id": "new-transformation",
+  "kind": "transformation",
+  "name": "New transformation",
+  "summary": "One sentence: what it is and why it matters.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "from": [
+    "human"
+  ],
+  "to": "vampire",
+  "method": "Short phrase for the Paths of change list",
+  "steps": [
+    "First step.",
+    "Second step."
+  ],
+  "chance": "5% per try",
+  "when": "At the next full moon"
+}

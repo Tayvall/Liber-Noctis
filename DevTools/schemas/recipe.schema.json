@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "recipe.schema.json",
+  "title": "Liber Noctis recipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "kind",
+    "name",
+    "summary",
+    "trust",
+    "sources",
+    "last_updated",
+    "category",
+    "made_at",
+    "ingredients"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "$ref": "defs.schema.json#/$defs/ref"
+    },
+    "kind": {
+      "const": "recipe"
+    },
+    "name": {
+      "$ref": "defs.schema.json#/$defs/text"
+    },
+    "aka": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "summary": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "trust": {
+      "$ref": "defs.schema.json#/$defs/trust"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "defs.schema.json#/$defs/ref"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "src"
+            ],
+            "properties": {
+              "src": {
+                "$ref": "defs.schema.json#/$defs/ref"
+              },
+              "note": {
+                "$ref": "defs.schema.json#/$defs/text"
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "last_updated": {
+      "$ref": "defs.schema.json#/$defs/date"
+    },
+    "see_also": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/ref"
+      },
+      "minItems": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "tbc": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "disputed": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/md"
+      },
+      "minItems": 1
+    },
+    "notes": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "category": {
+      "enum": [
+        "potion",
+        "trinket",
+        "weapon",
+        "material",
+        "charm"
+      ]
+    },
+    "made_at": {
+      "$ref": "defs.schema.json#/$defs/ref"
+    },
+    "requires": {
+      "$ref": "defs.schema.json#/$defs/level"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/ingredient"
+      },
+      "minItems": 1
+    },
+    "fuel": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/qty"
+      },
+      "minItems": 1
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/md"
+      },
+      "minItems": 1
+    },
+    "effect": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "duration": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "uses": {
+      "$ref": "defs.schema.json#/$defs/text"
+    },
+    "rarity": {
+      "enum": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "description": "Tay's difficulty grade. Only on things that are made or found."
+    },
+    "works_on": {
+      "$ref": "defs.schema.json#/$defs/worksOn"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "new-item",
+  "kind": "item",
+  "name": "New item",
+  "summary": "One sentence: what it is and why it matters.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "ingredient",
+  "effect": "What it does when used or worn.",
+  "obtain": [
+    {
+      "method": "found",
+      "text": "Where and how."
+    }
+  ]
+}

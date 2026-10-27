@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "code.schema.json",
+  "title": "Liber Noctis code",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "kind",
+    "name",
+    "summary",
+    "trust",
+    "sources",
+    "last_updated",
+    "code",
+    "status",
+    "checked"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "$ref": "defs.schema.json#/$defs/ref"
+    },
+    "kind": {
+      "const": "code"
+    },
+    "name": {
+      "$ref": "defs.schema.json#/$defs/text"
+    },
+    "aka": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "summary": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "trust": {
+      "$ref": "defs.schema.json#/$defs/trust"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "defs.schema.json#/$defs/ref"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "src"
+            ],
+            "properties": {
+              "src": {
+                "$ref": "defs.schema.json#/$defs/ref"
+              },
+              "note": {
+                "$ref": "defs.schema.json#/$defs/text"
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "last_updated": {
+      "$ref": "defs.schema.json#/$defs/date"
+    },
+    "see_also": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/ref"
+      },
+      "minItems": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "tbc": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "disputed": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/md"
+      },
+      "minItems": 1
+    },
+    "notes": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "code": {
+      "$ref": "defs.schema.json#/$defs/text"
+    },
+    "reward": {
+      "$ref": "defs.schema.json#/$defs/text"
+    },
+    "status": {
+      "enum": [
+        "active",
+        "thin",
+        "disputed",
+        "expired"
+      ]
+    },
+    "checked": {
+      "$ref": "defs.schema.json#/$defs/date"
+    }
+  }
+}

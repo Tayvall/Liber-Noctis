@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/npc.schema.json",
+  "id": "new-npc",
+  "kind": "npc",
+  "name": "New npc",
+  "summary": "One sentence: what it is and why it matters.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "role": "merchant",
+  "location": [
+    "first-village"
+  ],
+  "sells": [
+    {
+      "item": "heart",
+      "price": 100
+    }
+  ]
+}

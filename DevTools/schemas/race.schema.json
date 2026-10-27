@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "race.schema.json",
+  "title": "Liber Noctis race",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "kind",
+    "name",
+    "summary",
+    "trust",
+    "sources",
+    "last_updated",
+    "category",
+    "origin"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "$ref": "defs.schema.json#/$defs/ref"
+    },
+    "kind": {
+      "const": "race"
+    },
+    "name": {
+      "$ref": "defs.schema.json#/$defs/text"
+    },
+    "aka": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "summary": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "trust": {
+      "$ref": "defs.schema.json#/$defs/trust"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "defs.schema.json#/$defs/ref"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "src"
+            ],
+            "properties": {
+              "src": {
+                "$ref": "defs.schema.json#/$defs/ref"
+              },
+              "note": {
+                "$ref": "defs.schema.json#/$defs/text"
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "last_updated": {
+      "$ref": "defs.schema.json#/$defs/date"
+    },
+    "see_also": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/ref"
+      },
+      "minItems": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "tbc": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "disputed": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/md"
+      },
+      "minItems": 1
+    },
+    "notes": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "category": {
+      "enum": [
+        "playable",
+        "variant"
+      ]
+    },
+    "parent": {
+      "$ref": "defs.schema.json#/$defs/ref"
+    },
+    "type_line": {
+      "$ref": "defs.schema.json#/$defs/text"
+    },
+    "origin": {
+      "enum": [
+        "starting",
+        "turned",
+        "gamepass",
+        "earned",
+        "upcoming"
+      ]
+    },
+    "daylight": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "blood": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "starts_with": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/md"
+      },
+      "minItems": 1
+    },
+    "abilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "$ref": "defs.schema.json#/$defs/text"
+          },
+          "key": {
+            "$ref": "defs.schema.json#/$defs/text"
+          },
+          "level": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "starting": {
+            "const": true
+          },
+          "cooldown": {
+            "$ref": "defs.schema.json#/$defs/text"
+          },
+          "effect": {
+            "$ref": "defs.schema.json#/$defs/md"
+          },
+          "targets": {
+            "$ref": "defs.schema.json#/$defs/text"
+          },
+          "works_on": {
+            "$ref": "defs.schema.json#/$defs/worksOn"
+          },
+          "spell": {
+            "$ref": "defs.schema.json#/$defs/ref"
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/md"
+      },
+      "minItems": 1
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/md"
+      },
+      "minItems": 1
+    },
+    "ranks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "from"
+        ],
+        "properties": {
+          "name": {
+            "$ref": "defs.schema.json#/$defs/text"
+          },
+          "from": {
+            "type": "integer"
+          },
+          "to": {
+            "type": "integer"
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "clan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "body"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "defs.schema.json#/$defs/text"
+        },
+        "body": {
+          "$ref": "defs.schema.json#/$defs/md"
+        }
+      }
+    },
+    "tips": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/md"
+      },
+      "minItems": 1
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/section"
+      },
+      "minItems": 1
+    }
+  }
+}

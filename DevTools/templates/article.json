@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/article.schema.json",
+  "id": "new-article",
+  "kind": "article",
+  "name": "New article",
+  "summary": "One sentence: what it is and why it matters.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "section": "levels",
+  "sections": [
+    {
+      "heading": "A heading",
+      "body": "Text, with [[witch]] links to other entries."
+    }
+  ]
+}

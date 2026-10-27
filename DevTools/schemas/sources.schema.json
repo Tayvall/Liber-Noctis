@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sources.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sources"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "type",
+          "title"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "defs.schema.json#/$defs/ref"
+          },
+          "type": {
+            "enum": [
+              "wiki",
+              "discord",
+              "trello",
+              "video",
+              "doc",
+              "tested"
+            ]
+          },
+          "title": {
+            "$ref": "defs.schema.json#/$defs/text"
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "rev": {
+            "type": "integer"
+          },
+          "date": {
+            "$ref": "defs.schema.json#/$defs/date"
+          }
+        }
+      },
+      "minItems": 1
+    }
+  }
+}

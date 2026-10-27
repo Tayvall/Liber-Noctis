@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "book.schema.json",
+  "type": "object",
+  "required": [
+    "chapters"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "chapters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "numeral",
+          "ordinal",
+          "title",
+          "intro",
+          "sections"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "defs.schema.json#/$defs/ref"
+          },
+          "numeral": {
+            "$ref": "defs.schema.json#/$defs/text"
+          },
+          "ordinal": {
+            "$ref": "defs.schema.json#/$defs/text"
+          },
+          "title": {
+            "$ref": "defs.schema.json#/$defs/text"
+          },
+          "intro": {
+            "$ref": "defs.schema.json#/$defs/md"
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "title"
+              ],
+              "properties": {
+                "id": {
+                  "$ref": "defs.schema.json#/$defs/ref"
+                },
+                "title": {
+                  "$ref": "defs.schema.json#/$defs/text"
+                },
+                "races": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "defs.schema.json#/$defs/ref"
+                  },
+                  "minItems": 1
+                },
+                "map": {
+                  "const": true
+                },
+                "match": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "kind"
+                    ],
+                    "properties": {
+                      "kind": {
+                        "$ref": "defs.schema.json#/$defs/text"
+                      },
+                      "form": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "defs.schema.json#/$defs/text"
+                        },
+                        "minItems": 1
+                      },
+                      "category": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "defs.schema.json#/$defs/text"
+                        },
+                        "minItems": 1
+                      },
+                      "section": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "defs.schema.json#/$defs/text"
+                        },
+                        "minItems": 1
+                      }
+                    }
+                  },
+                  "minItems": 1
+                }
+              }
+            },
+            "minItems": 1
+          }
+        }
+      },
+      "minItems": 1
+    }
+  }
+}

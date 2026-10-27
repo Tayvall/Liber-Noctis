@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/gamepass.schema.json",
+  "id": "new-gamepass",
+  "kind": "gamepass",
+  "name": "New gamepass",
+  "summary": "One sentence: what it is and why it matters.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "robux": 100,
+  "grants": [
+    "What it gives."
+  ]
+}

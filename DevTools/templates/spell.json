@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/spell.schema.json",
+  "id": "new-spell",
+  "kind": "spell",
+  "name": "New spell",
+  "summary": "One sentence: what it is and why it matters.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "form": "spoken",
+  "incantation": "Words to say!",
+  "caster": {
+    "race": "witch",
+    "level": 25
+  },
+  "effect": "What it does.",
+  "cooldown": "30 s"
+}

@@ -1,0 +1,39 @@
+CONTROLS & LAYOUT
+
+1. Dev notes toggle: Replace the dark/light button with a "Dev" toggle that shows or hides the green dev notes. Off by default.
+
+2. Remove dark mode completely.
+
+3. Close the book: On the first spread, turning back one more page closes the book onto its front cover.
+
+4. Endpaper text: On the first page, replace "Set down by Tay & contributors" with "A Fan-Made Guide".
+
+5. Contents bookmark: The Contents button becomes a yellow ribbon tab that always sticks out from the top of the book, like a bookmark.
+
+6. Back/Forward buttons: Slimmer, on the left and right of the page-count line in one row, so the book can be taller.
+
+7. Search hint: Remove the hint line under the search bar. The placeholder becomes "/ Search the whole book…".
+
+8. Text scaling: Text size follows the page size, so smaller windows still fit a full page of text.
+
+9. Ability keys: Show keys as plain text, e.g. "Bite (E)", instead of black badges. Plain text leaves room to add Xbox or mobile controls later.
+
+10. Interactive map button: Add an "Open interactive map (WIP)" button under the map. It does nothing yet.
+
+BUGS
+
+11. Rapid page turning: When you turn pages quickly, the page on the opposite side doesn't update (spamming → leaves the left page showing the page you started on, and the same with ←).
+
+REPO & CODE
+
+12. DevTools folder: Everything the site doesn't need to run (research, notes, schemas, templates, scripts, contributor guide) lives in a committed DevTools/ folder. The deploy runs .github/scripts/check.py.
+
+13. Easy data editing: Adding, changing or removing an entry means adding, editing or deleting its JSON file in data/<kind>/.
+
+14. No comments: Remove all comments from index.html.
+
+15. One commit: At public launch, squash the whole history into a single commit. Not before.
+
+QUESTION (answered)
+
+Should the animations use JavaScript? Page turns move to the browser's animation API so they can be chained and sped up. The rest stays CSS.

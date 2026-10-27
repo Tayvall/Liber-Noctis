@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "defs.schema.json",
+  "title": "Shared definitions",
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "md": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S",
+      "description": "Light markdown: **bold**, *italic*, `code`, - lists, 1. lists, [[id]] and [[id|label]] links, [TBC]."
+    },
+    "ref": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "The id of another entry"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "trust": {
+      "enum": [
+        "tested",
+        "unconfirmed",
+        "broken"
+      ],
+      "description": "tested = checked in game by the team; unconfirmed = not yet checked; broken = checked and it doesn't work"
+    },
+    "worksOn": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "race",
+          "works",
+          "trust"
+        ],
+        "properties": {
+          "race": {
+            "$ref": "defs.schema.json#/$defs/ref"
+          },
+          "works": {
+            "type": "boolean"
+          },
+          "trust": {
+            "$ref": "defs.schema.json#/$defs/trust"
+          },
+          "note": {
+            "$ref": "defs.schema.json#/$defs/text"
+          }
+        }
+      },
+      "minItems": 1,
+      "description": "Per-race result: does it work on this race? Each claim carries its own trust mark."
+    },
+    "qty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "item",
+        "qty"
+      ],
+      "properties": {
+        "item": {
+          "$ref": "defs.schema.json#/$defs/ref"
+        },
+        "qty": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "note": {
+          "$ref": "defs.schema.json#/$defs/text"
+        }
+      }
+    },
+    "ingredient": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/qty"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "any_of",
+            "qty"
+          ],
+          "properties": {
+            "any_of": {
+              "type": "array",
+              "items": {
+                "$ref": "defs.schema.json#/$defs/ref"
+              },
+              "minItems": 2
+            },
+            "qty": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "note": {
+              "$ref": "defs.schema.json#/$defs/text"
+            }
+          }
+        }
+      ]
+    },
+    "level": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "race": {
+          "$ref": "defs.schema.json#/$defs/ref"
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "minProperties": 1
+    },
+    "map": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y"
+      ],
+      "properties": {
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      },
+      "description": "Position on assets/map.png as % from the left and % from the top"
+    },
+    "pin": {
+      "enum": [
+        "village",
+        "base",
+        "merchant",
+        "enemies",
+        "area"
+      ]
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "heading",
+        "body"
+      ],
+      "properties": {
+        "heading": {
+          "$ref": "defs.schema.json#/$defs/text"
+        },
+        "body": {
+          "$ref": "defs.schema.json#/$defs/md"
+        }
+      }
+    }
+  }
+}

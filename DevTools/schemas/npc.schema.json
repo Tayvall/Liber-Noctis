@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "npc.schema.json",
+  "title": "Liber Noctis npc",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "kind",
+    "name",
+    "summary",
+    "trust",
+    "sources",
+    "last_updated",
+    "role"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "$ref": "defs.schema.json#/$defs/ref"
+    },
+    "kind": {
+      "const": "npc"
+    },
+    "name": {
+      "$ref": "defs.schema.json#/$defs/text"
+    },
+    "aka": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "summary": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "trust": {
+      "$ref": "defs.schema.json#/$defs/trust"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "defs.schema.json#/$defs/ref"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "src"
+            ],
+            "properties": {
+              "src": {
+                "$ref": "defs.schema.json#/$defs/ref"
+              },
+              "note": {
+                "$ref": "defs.schema.json#/$defs/text"
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "last_updated": {
+      "$ref": "defs.schema.json#/$defs/date"
+    },
+    "see_also": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/ref"
+      },
+      "minItems": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "tbc": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/text"
+      },
+      "minItems": 1
+    },
+    "disputed": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/md"
+      },
+      "minItems": 1
+    },
+    "notes": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "role": {
+      "enum": [
+        "merchant",
+        "buyer",
+        "quest",
+        "enemy"
+      ]
+    },
+    "location": {
+      "type": "array",
+      "items": {
+        "$ref": "defs.schema.json#/$defs/ref"
+      },
+      "minItems": 1
+    },
+    "map": {
+      "$ref": "defs.schema.json#/$defs/map"
+    },
+    "pin": {
+      "$ref": "defs.schema.json#/$defs/pin"
+    },
+    "sells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "item": {
+            "$ref": "defs.schema.json#/$defs/ref"
+          },
+          "name": {
+            "$ref": "defs.schema.json#/$defs/text",
+            "description": "For goods without an entry of their own"
+          },
+          "price": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "price_by_race": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "materials": {
+            "type": "array",
+            "items": {
+              "$ref": "defs.schema.json#/$defs/qty"
+            },
+            "minItems": 1
+          },
+          "restricted_to": {
+            "type": "array",
+            "items": {
+              "$ref": "defs.schema.json#/$defs/ref"
+            },
+            "minItems": 1
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "note": {
+            "$ref": "defs.schema.json#/$defs/text"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "item"
+            ]
+          },
+          {
+            "required": [
+              "name"
+            ]
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "buys": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "item",
+          "qty",
+          "price"
+        ],
+        "properties": {
+          "item": {
+            "$ref": "defs.schema.json#/$defs/ref"
+          },
+          "qty": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "price": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "level": {
+      "$ref": "defs.schema.json#/$defs/text"
+    },
+    "spawn": {
+      "$ref": "defs.schema.json#/$defs/md"
+    },
+    "hostile": {
+      "type": "boolean"
+    },
+    "quest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requires": {
+          "type": "array",
+          "items": {
+            "$ref": "defs.schema.json#/$defs/md"
+          },
+          "minItems": 1
+        },
+        "objectives": {
+          "type": "array",
+          "items": {
+            "$ref": "defs.schema.json#/$defs/md"
+          },
+          "minItems": 1
+        },
+        "rewards": {
+          "type": "array",
+          "items": {
+            "$ref": "defs.schema.json#/$defs/md"
+          },
+          "minItems": 1
+        }
+      }
+    }
+  }
+}

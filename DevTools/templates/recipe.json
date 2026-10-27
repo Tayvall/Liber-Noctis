@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "new-recipe",
+  "kind": "recipe",
+  "name": "New recipe",
+  "summary": "One sentence: what it is and why it matters.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "potion",
+  "made_at": "witch-house",
+  "rarity": "rare",
+  "ingredients": [
+    {
+      "item": "heart",
+      "qty": 1
+    }
+  ],
+  "effect": "What it does.",
+  "duration": "20 min"
+}

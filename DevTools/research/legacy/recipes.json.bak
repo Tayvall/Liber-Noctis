@@ -1,0 +1,269 @@
+[
+  {
+    "name": "Change Spell Colour",
+    "type": "Other",
+    "rarity": "Legendary",
+    "status": "tested",
+    "effect": "Changes spell colour permanently",
+    "station": "Graveyard Altar",
+    "stat": "Nan",
+    "ingredients": [
+      "1x Framente",
+      "ORANGE/BLACK/PURPLE/WHITE/BLUE/GREEN/RED/CYAN",
+      "1x Heart",
+      "1x Ruby"
+    ],
+    "steps": [
+      "Place items in altar"
+    ],
+    "notes": "",
+    "incantation": ""
+  },
+  {
+    "name": "Sun Ring",
+    "type": "Other",
+    "rarity": "Uncommon",
+    "status": "tested",
+    "effect": "Temporary lets vampires walk in the sun when worn",
+    "station": "Graveyard Altar",
+    "stat": "Nan",
+    "ingredients": [
+      "1x Metal Ring",
+      "1x Heart"
+    ],
+    "steps": [
+      "Buy Metal ring from Merchant",
+      "Get heart from a happy donor",
+      "Place both items into the altar"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Praesidium Potion",
+    "type": "Potion",
+    "rarity": "Rare",
+    "status": "tested",
+    "effect": "Will Protect the witch who drinks it",
+    "station": "Graveyarm Altar",
+    "stat": "Cup 20min / Dish 40min",
+    "ingredients": [
+      "1x Blood Cup",
+      "1x Verbena"
+    ],
+    "steps": [
+      "Get a vampire to use a cup",
+      "Take the new Blood cup and combine it with a Verbena (flower)"
+    ],
+    "notes": "You need to say \"Praesidium!\" in chat when using"
+  },
+  {
+    "name": "Inhuman Potion",
+    "type": "Potion",
+    "rarity": "Rare",
+    "status": "tested",
+    "effect": "Protects Original Vampires from White Oak Stakes",
+    "station": "Graveyard Altar",
+    "stat": "Unown",
+    "ingredients": [
+      "1x Dagger",
+      "1x Heart",
+      "1x Vampire Blood"
+    ],
+    "steps": [
+      "Combine at altar"
+    ],
+    "notes": "",
+    "incantation": ""
+  },
+  {
+    "name": "Praesidium!",
+    "type": "Spell",
+    "rarity": "Common",
+    "status": "tested",
+    "effect": "Enables the Praesidium Potion effect",
+    "incantation": "Praesidium!",
+    "station": "",
+    "stat": "",
+    "ingredients": [],
+    "steps": [],
+    "notes": "Needs the Praesidium Potion"
+  },
+  {
+    "name": "Strength!",
+    "type": "Spell",
+    "rarity": "Common",
+    "status": "tested",
+    "effect": "Gives a 20% boost to Damage",
+    "incantation": "Strength!",
+    "station": "",
+    "stat": "",
+    "ingredients": [],
+    "steps": [],
+    "notes": ""
+  },
+  {
+    "name": "White Oak Ash Dagger",
+    "type": "Weapon",
+    "rarity": "Rare",
+    "status": "tested",
+    "effect": "Can be used perminantly to hold down a vampire",
+    "incantation": "",
+    "station": "Graveyard Altar",
+    "stat": "Inf",
+    "ingredients": [
+      "1x Dagger",
+      "1z White Oak Stake"
+    ],
+    "steps": [],
+    "notes": ""
+  },
+  {
+    "name": "Sanguis Tuus Vita Mea",
+    "type": "Spell",
+    "rarity": "Common",
+    "status": "tested",
+    "effect": "Gives protection to Original Vampires",
+    "incantation": "sanguis tuus vita mea",
+    "station": "",
+    "stat": "",
+    "ingredients": [],
+    "steps": [
+      "make sure to be level 2000+ when trying to use",
+      "ONLY works on Original Vampires"
+    ],
+    "notes": "Once spells ends there is a 20 min cooldown"
+  },
+  {
+    "name": "Dagger",
+    "type": "Ingredient",
+    "rarity": "Uncommon",
+    "status": "unconfirmed",
+    "effect": "",
+    "incantation": "",
+    "station": "Weapons Merchant",
+    "stat": "",
+    "ingredients": [
+      "20x Silver Ore",
+      "400 Coins"
+    ],
+    "steps": [],
+    "notes": ""
+  },
+  {
+    "name": "Heart",
+    "type": "Ingredient",
+    "rarity": "Common",
+    "status": "unconfirmed",
+    "effect": "",
+    "incantation": "",
+    "station": "",
+    "stat": "",
+    "ingredients": [],
+    "steps": [
+      "Use Heart ripper move on any \"Willing\" participant"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Blood Cup",
+    "type": "Ingredient",
+    "rarity": "Common",
+    "status": "unconfirmed",
+    "effect": "",
+    "incantation": "",
+    "station": "",
+    "stat": "",
+    "ingredients": [
+      "1x Cup",
+      "1x Vampire lvl 100+"
+    ],
+    "steps": [],
+    "notes": "Sold at Merchant, 1st village"
+  },
+  {
+    "name": "Blood dish",
+    "type": "Ingredient",
+    "rarity": "Common",
+    "status": "unconfirmed",
+    "effect": "",
+    "incantation": "",
+    "station": "",
+    "stat": "",
+    "ingredients": [
+      "1x Dish",
+      "1x Vampire lvl 100+"
+    ],
+    "steps": [],
+    "notes": "Sold at Merchant, 1st village"
+  },
+  {
+    "name": "Metal Ring",
+    "type": "Ingredient",
+    "rarity": "Common",
+    "status": "unconfirmed",
+    "effect": "",
+    "incantation": "",
+    "station": "",
+    "stat": "",
+    "ingredients": [],
+    "steps": [],
+    "notes": "Sold at Merchant, 1st village"
+  },
+  {
+    "name": "Vampire Blood",
+    "type": "Ingredient",
+    "rarity": "Common",
+    "status": "unconfirmed",
+    "effect": "",
+    "incantation": "",
+    "station": "",
+    "stat": "",
+    "ingredients": [],
+    "steps": [],
+    "notes": "Sold at Vampire castle Merchant"
+  },
+  {
+    "name": "Framente <Colour>",
+    "type": "Ingredient",
+    "rarity": "Common",
+    "status": "unconfirmed",
+    "effect": "",
+    "incantation": "",
+    "station": "",
+    "stat": "",
+    "ingredients": [],
+    "steps": [],
+    "notes": "Used for changing witch spell colour"
+  },
+  {
+    "name": "Verbena",
+    "type": "Ingredient",
+    "rarity": "Common",
+    "status": "unconfirmed",
+    "effect": "",
+    "incantation": "",
+    "station": "",
+    "stat": "",
+    "ingredients": [],
+    "steps": [],
+    "notes": "Found glowing around the map"
+  },
+  {
+    "name": "Location Spell",
+    "type": "Spell",
+    "rarity": "Uncommon",
+    "status": "unconfirmed",
+    "effect": "Finds someone on the map",
+    "incantation": "Quaerere",
+    "station": "",
+    "stat": "",
+    "ingredients": [
+      "1x Heart",
+      "3x Candle"
+    ],
+    "steps": [
+      "place the 3 candles down then use the heart and say the incantation"
+    ],
+    "notes": ""
+  }
+]

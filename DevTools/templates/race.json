@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/race.schema.json",
+  "id": "new-race",
+  "kind": "race",
+  "name": "New race",
+  "summary": "One sentence: what it is and why it matters.",
+  "trust": "unconfirmed",
+  "sources": [
+    "tay"
+  ],
+  "last_updated": "2026-10-27",
+  "category": "variant",
+  "parent": "vampire",
+  "origin": "earned",
+  "type_line": "Vampire variant",
+  "strengths": [
+    "…"
+  ],
+  "weaknesses": [
+    "…"
+  ],
+  "abilities": [
+    {
+      "name": "Ability name",
+      "key": "Q",
+      "level": 100,
+      "cooldown": "15 s",
+      "effect": "What it does."
+    }
+  ]
+}
