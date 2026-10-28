@@ -1,287 +1,114 @@
-
-
-
-
-
-
-
-
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!! THIS IS JUST TO HELP ME REMEMBER GIT COMMANDS, CLAUDE MADE THIS TO HELP ME PLEASE IGNORE !!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 LIBER NOCTIS: GIT COMMANDS
-==========================
+Work on "dev". Merge into "main" to publish.
 
-Day-to-day work happens on the "dev" branch. "main" is what gets published
-(once the repo is public and Pages is on), so only merge into main when dev is good.
 
+--- 1. NEW DEVICE SETUP ---
 
------------------------------------------------------------------
-1. SETTING UP A NEW DEVICE (once per computer)
------------------------------------------------------------------
+sudo pacman -S git github-cli                    install git + gh
+gh auth login                                    GitHub.com > HTTPS > Yes > web browser
+git config --global user.name "Tay"              set name
+git config --global user.email "126823979+Tayvall@users.noreply.github.com"
+gh repo clone Tayvall/Liber-Noctis               download repo
+cd Liber-Noctis
+git switch dev                                   go to dev branch
+python DevTools/serve.py                         preview site (run again to stop)
 
-Install git and the GitHub CLI tool ("gh"):
 
-    CachyOS / Arch:   sudo pacman -S git github-cli
-    
-Log in to GitHub through gh. This replaces passwords: GitHub doesn't
-accept your account password for git any more.
+--- 2. START OF EVERY SESSION ---
 
-    gh auth login
+git switch dev                                   go to dev
+git pull                                         get latest changes
 
-    Answer:  GitHub.com  ->  HTTPS  ->  "Authenticate Git with your
-             GitHub credentials?" Yes  ->  Login with a web browser
-    Then paste the one-time code it shows into the page it opens.
 
-Tell git who you are (once per device):
+--- 3. SAVE + PUSH ---
 
-    git config --global user.name "Tay"
-    git config --global user.email "126823979+Tayvall@users.noreply.github.com"
+python .github/scripts/check.py                  validate data
+git status                                       list changed files
+git diff                                         show changes
+git add .                                        stage everything
+git commit -m "message"                          save
+git push                                         upload
 
-Download the project and switch to the dev branch:
 
-    gh repo clone Tayvall/Liber-Noctis
-    cd Liber-Noctis
-    git switch dev
+--- 4. PUBLISH (dev -> main) ---
 
-Check it works:
+git switch main
+git pull
+git merge --no-ff --no-commit dev                merge without committing
+git rm -r -q --ignore-unmatch DevTools           keep DevTools off main (also fixes DevTools conflicts)
+git commit -m "Publish"
+git push
+git switch dev                                   back to work
 
-    python DevTools/serve.py        (opens the book; run again to stop)
 
+--- 5. FILES ---
 
------------------------------------------------------------------
-2. EVERY TIME YOU SIT DOWN TO WORK
------------------------------------------------------------------
+git rm "file"                                    delete file
+git rm -r "folder"                               delete folder
+git rm --cached "file"                           untrack but keep locally (add to .gitignore)
+git mv "old" "new"                               move/rename
+git restore --staged "file"                      unstage
+git restore "file"                               undo uncommitted edits to file
 
-Get the latest changes from the other computer FIRST:
 
-    git switch dev
-    git pull
+--- 6. FIXES ---
 
-Then edit files as normal.
+git stash; git pull; git stash pop              pull when local changes block it
+git pull; git push                               push rejected ("fetch first")
+git add .; git commit -m "Merge"; git push       after fixing <<<<<<< >>>>>>> conflicts
+git restore .                                    discard ALL uncommitted edits
+git branch                                       show current branch (*)
+git log --oneline -10                            recent commits
 
 
------------------------------------------------------------------
-3. SAVING AND PUSHING YOUR WORK TO DEV
------------------------------------------------------------------
+--- 7. DELETE ALL HISTORY (make repo look like one fresh commit) ---
 
-Check the data and look at it (optional but recommended):
+Rotate/change any leaked password or key FIRST. Wiping history does not un-leak it.
+Push everything from the other computer before starting.
 
-    python .github/scripts/check.py
-    python DevTools/serve.py        (run again to stop the preview)
+Repeat for each branch (dev, then main):
 
-See what you've changed:
+git switch dev                                   start from the branch's current files
+git checkout --orphan fresh                      new branch with no history
+git add -A                                       stage all current files
+git commit -m "Initial commit"                   the one and only commit
+git branch -D dev                                delete old branch
+git branch -m dev                                rename fresh -> dev
+git push -f origin dev                           overwrite GitHub's branch
 
-    git status
-    git diff
+(same 7 lines with "main" in place of "dev")
 
-Save it (a "commit") and send it to GitHub:
+git branch -a                                    check no other branches remain
+git push origin --delete <branch>                delete any other remote branch
+git tag -l                                       list tags (they keep old history alive)
+git push origin --delete <tag>; git tag -d <tag> delete each tag
+git log --oneline --all                          should show only 2 commits
+git reflog expire --expire=now --all             drop local references to old commits
+git gc --prune=now --aggressive                  delete old commits locally
 
-    git add .
-    git commit -m "Short note of what you changed"
-    git push
+Other computer: delete the folder and re-clone (section 1). Do NOT pull.
 
-Always push before you switch to the other computer.
+GitHub can still serve old commits by their hash (and forks/PRs keep them).
+To fully purge: GitHub Support > "remove cached views / sensitive data".
+If force push is refused: Settings > Branches > allow force pushes.
 
 
------------------------------------------------------------------
-4. PUBLISHING: MERGING DEV INTO MAIN (only when dev is good)
------------------------------------------------------------------
+--- 8. PUBLIC REPO + WEBSITE (once) ---
 
-    git switch main
-    git pull
-    git merge --no-ff --no-commit dev
-    git rm -r -q --ignore-unmatch DevTools     (DevTools stays dev-only)
-    git commit -m "Publish"
-    git push
-    git switch dev               (go back to dev to keep working)
-
-The "git rm" line also settles any conflict git reports about DevTools,
-so run it even if the merge stops with "CONFLICT (modify/delete)".
-
-The GitHub Action checks everything again. A broken build is never published.
-
-
------------------------------------------------------------------
-5. REMOVING, MOVING AND RENAMING FILES
------------------------------------------------------------------
-
-Delete a file from the repo AND from your computer:
-
-    git rm "path/to/file.json"
-
-Delete a whole folder:
-
-    git rm -r "path/to/folder"
-
-Remove a file from the repo but KEEP it on your computer
-(e.g. a personal copy you don't want on GitHub):
-
-    git rm --cached "path/to/file.json"
-    (then add its name to .gitignore so it isn't added back by "git add .")
-
-Move or rename a file (git keeps its history):
-
-    git mv "old/name.json" "new/name.json"
-
-Already deleted or moved files in your file manager? That's fine:
-"git add ." notices deleted and moved files too. Check with
-"git status" (deleted files show as "deleted:") before committing.
-
-After any of the above, save and push as usual:
-
-    git commit -m "Remove/move ..."
-    git push
-
-Removed the wrong file by mistake (before committing)?
-
-    git restore --staged "path/to/file.json"
-    git restore "path/to/file.json"
-
-Tip: data files are named after their id, so if you rename one in
-data/, also change the "id" inside it and any [[links]] or
-references to it. "python .github/scripts/check.py" will list any you missed.
-
-
------------------------------------------------------------------
-6. WHEN THINGS GO SIDEWAYS
------------------------------------------------------------------
-
-"Your local changes would be overwritten" when pulling:
-  set your changes aside, pull, then bring them back:
-
-    git stash
-    git pull
-    git stash pop
-
-"rejected ... fetch first" when pushing:
-  the other computer pushed something you don't have yet:
-
-    git pull
-    git push
-
-A merge conflict (git names the files):
-  open each file, keep the right version between the <<<<<<< and >>>>>>>
-  markers, delete the marker lines, then:
-
-    git add .
-    git commit -m "Merge changes"
-    git push
-
-Throw away ALL uncommitted edits (can't be undone):
-
-    git restore .
-
-Which branch am I on?
-
-    git branch                   (the one with * is current)
-
-History of recent commits:
-
-    git log --oneline -10
-
-
------------------------------------------------------------------
-7. MAKING THE REPO PUBLIC AND TURNING ON THE WEBSITE (once)
------------------------------------------------------------------
-
-The website is built by GitHub Pages from the "main" branch, using the
-GitHub Action in .github/workflows/pages.yml. On a free account Pages
-only works on PUBLIC repos, so the repo has to be public first.
-
---- Before you flip it: check there's nothing private in it ---
-
-Public means EVERYONE can see EVERY branch (dev too, with DevTools) and
-the WHOLE history, including files you deleted in later commits.
-
-    git status                   (nothing half-finished lying around)
-    git log --oneline --all      (every commit that will become visible)
-    git log --all -p -i -G "password|token|secret|api_key"
-                                 (searches all history for secrets;
-                                  no output = nothing found; q to quit)
-
-If a secret IS in the history, deleting the file is not enough: change
-the password/key itself before going public.
-
---- Step 1: make the repo public ---
-
-  Website way:
-    github.com/Tayvall/Liber-Noctis -> Settings -> General ->
-    scroll to the bottom "Danger Zone" -> Change visibility ->
-    Change to public -> type the repo name to confirm.
-
-  Terminal way:
-    gh repo view --json visibility          (shows PRIVATE or PUBLIC)
-    gh repo edit --visibility public --accept-visibility-change-consequences
-    gh repo view --json visibility          (should now say PUBLIC)
-
-  Changed your mind? Same command with "private" puts it back.
-  (Stars and watchers are lost when you go private, nothing else.)
-
---- Step 2: turn on Pages, built by the Action ---
-
-  Website way:
-    Settings -> Pages -> "Build and deployment" -> Source:
-    pick "GitHub Actions" (NOT "Deploy from a branch").
-
-  Terminal way:
-    gh api -X POST repos/Tayvall/Liber-Noctis/pages -f build_type=workflow
-    (if it says Pages already exists, switch it to the Action instead:)
-    gh api -X PUT  repos/Tayvall/Liber-Noctis/pages -f build_type=workflow
-
-  Check the setting stuck:
-    gh api repos/Tayvall/Liber-Noctis/pages --jq '.build_type, .html_url'
-    -> should print "workflow" and the site address.
-
---- Step 3: publish something ---
-
-Nothing is published until the Action runs on main. Either do the
-merge from section 4, or re-run the last main build by hand:
-
-    gh workflow run pages.yml --ref main
-
-  (Website way: Actions tab -> "Check and publish" -> Run workflow ->
-   Branch: main -> Run workflow.)
-
---- Step 4: check the build worked ---
-
-    gh run list --workflow pages.yml --limit 5
-                                 (newest first; look for "completed
-                                  success" on a main run)
-    gh run watch                 (pick a run; live progress until it ends)
-    gh run view --log-failed     (pick a failed run; shows only the
-                                  lines that broke, usually check.py
-                                  listing a bad id or link)
-
-  Website way: the Actions tab. Green tick = published, red X = not
-  published (the old site stays up). Click the run to see why.
-
-  Runs on dev only do the "check" job; only main runs do "deploy".
-  That's expected, not a failure.
-
---- Step 5: check the website is actually up ---
-
-The address is:
-
-    https://tayvall.github.io/Liber-Noctis/
+git log --all -p -i -G "password|token|secret|api_key"   search history for secrets
+gh repo view --json visibility                   PRIVATE or PUBLIC
+gh repo edit --visibility public --accept-visibility-change-consequences
+gh api -X POST repos/Tayvall/Liber-Noctis/pages -f build_type=workflow   turn on Pages
+gh api -X PUT  repos/Tayvall/Liber-Noctis/pages -f build_type=workflow   (if it already exists)
+gh api repos/Tayvall/Liber-Noctis/pages --jq '.build_type, .html_url'    check Pages
+gh workflow run pages.yml --ref main             publish without merging
+gh run list --workflow pages.yml --limit 5       recent builds
+gh run watch                                     watch a build live
+gh run view --log-failed                         show why a build failed
+
+Site: https://tayvall.github.io/Liber-Noctis/
+Dev runs only "check"; main runs "check" + "deploy".
