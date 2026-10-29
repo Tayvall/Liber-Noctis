@@ -3,13 +3,17 @@
   "kind": "item",
   "name": "Vampire Hat",
   "summary": "A wide hat that keeps the sun off a vampire.",
-  "trust": "unconfirmed",
+  "images": [
+    {
+      "file": "vampire-hat.png"
+    }
+  ],
+  "trust": "confirmed",
   "sources": [
     "wiki-items",
     "wiki-beginner-guide"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "trinket",
-  "effect": "Protection from sunlight.",
-  "notes": "The Beginner Guide says it is bought at spawn; for vampires that is the castle."
+  "effect": "Protection from sunlight."
 }

@@ -3,13 +3,13 @@
   "kind": "item",
   "name": "Rapier",
   "summary": "A slender silver blade.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "wiki-items",
     "wiki-vampire-hunter",
     "discord-2026-10-26"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "category": "weapon",
   "effect": "Damage scales with level and Strength."
 }

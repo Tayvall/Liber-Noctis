@@ -3,13 +3,11 @@
   "kind": "item",
   "name": "Cooking Pot",
   "summary": "For cooking the Cook Shop's vegetables.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "wiki-items"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "category": "tool",
-  "tbc": [
-    "effect"
-  ]
+  "use": "Must be placed over a campfire to allow cooking."
 }

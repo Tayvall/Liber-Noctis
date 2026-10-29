@@ -3,17 +3,19 @@
   "kind": "item",
   "name": "Dish",
   "summary": "An empty dish (or bowl), waiting for blood.",
+  "images": [
+    {
+      "file": "dish.png"
+    }
+  ],
   "trust": "unconfirmed",
   "sources": [
     "wiki-items",
     "wiki-witch-spells"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "ingredient",
   "aka": [
     "Bowl"
-  ],
-  "disputed": [
-    "The Items page sells it at the General Shop; Witch Spells says the first town's cooking merchant."
   ]
 }

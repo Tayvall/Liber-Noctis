@@ -2,13 +2,18 @@
   "id": "human-blood",
   "kind": "item",
   "name": "Human Blood",
-  "summary": "A blood bag of human blood.",
-  "trust": "unconfirmed",
+  "summary": "A blood jar of human blood.",
+  "images": [
+    {
+      "file": "blood.png"
+    }
+  ],
+  "trust": "confirmed",
   "sources": [
     "wiki-items",
     "wiki-beginner-guide"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "consumable",
   "use": "Drink it to feed, or to finish turning into a vampire."
 }

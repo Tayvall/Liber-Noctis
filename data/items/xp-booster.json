@@ -7,9 +7,8 @@
   "sources": [
     "wiki-items"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "consumable",
-  "tbc": [
-    "effect"
-  ]
+  "effect": "Gives 2x EXP gain but can't be stacked or purchased while effects are active.",
+  "duration": "15 minutes"
 }

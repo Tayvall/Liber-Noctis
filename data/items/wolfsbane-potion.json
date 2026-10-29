@@ -3,12 +3,17 @@
   "kind": "item",
   "name": "Wolfsbane Potion",
   "summary": "Twenty minutes safe from a werewolf's infection.",
-  "trust": "unconfirmed",
+  "images": [
+    {
+      "file": "potion.png"
+    }
+  ],
+  "trust": "confirmed",
   "sources": [
     "wiki-items",
     "discord-2026-10-26"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "consumable",
   "restricted_to": [
     "human"

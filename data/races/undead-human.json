@@ -1,0 +1,22 @@
+{
+  "id": "undead-human",
+  "kind": "race",
+  "name": "Undead Human",
+  "summary": "A Human sub-race gained when bitten by a vampire.",
+  "trust": "unconfirmed",
+  "sources": [
+    "wiki-vampire-hunter",
+    "wiki-human"
+  ],
+  "last_updated": "2026-10-29",
+  "category": "variant",
+  "parent": "human",
+  "origin": "earned",
+  "type_line": "Sub-race of Humans partly infected with vampirism.",
+  "abilities": [
+    {
+      "name": "Blood Drink",
+      "effect": "Refills the blood meter, when used on a human will complete the transformation into a vampire"
+    }
+  ]
+}

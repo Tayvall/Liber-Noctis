@@ -1,0 +1,18 @@
+{
+  "id": "double-blood-jar",
+  "kind": "item",
+  "name": "Double Blood Jar",
+  "summary": "Backup blood supply.",
+  "images": [
+    {
+      "file": "blood.png"
+    }
+  ],
+  "trust": "confirmed",
+  "sources": [
+    "wiki-items"
+  ],
+  "last_updated": "2026-10-29",
+  "category": "consumable",
+  "effect": "Gives vampires a backup blood supply. Only 3 can be in use at a time."
+}

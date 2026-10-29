@@ -17,6 +17,7 @@ There are **10 kinds**. Compared with the brief:
 | `name` | ✓ | |
 | `aka` | | other names, searchable (`"Framente"`, `"Immortality Spell"`) |
 | `summary` | ✓ | one or two sentences, markdown |
+| `images` | | [{`file`, `caption`}]: PNGs in `data/images`. The first goes in the page header, the rest under **Skins**. Any size works; `check.py` reads each one's size so pages lay out right |
 | `trust` | ✓ | `tested` · `unconfirmed` · `broken` |
 | `sources` | ✓ | ≥1 id from `data/sources.json`, as a string or `{ "src": id, "note": "…" }` |
 | `last_updated` | ✓ | `YYYY-MM-DD` |

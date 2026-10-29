@@ -3,11 +3,11 @@
   "kind": "item",
   "name": "Witch Bag",
   "summary": "Keeps your gathered items when you leave a server.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "wiki-items"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "trinket",
   "aka": [
     "WitchBag"

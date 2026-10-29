@@ -3,18 +3,14 @@
   "kind": "transformation",
   "name": "Vampire to Vegan",
   "summary": "Feed on rats, and only rats.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "wiki-vegan-vampire"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "from": [
     "vampire"
   ],
   "to": "vegan-vampire",
-  "method": "Feeding only on rats",
-  "tbc": [
-    "chance",
-    "when"
-  ]
+  "method": "Feeding only on rats"
 }

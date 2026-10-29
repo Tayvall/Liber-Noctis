@@ -3,12 +3,12 @@
   "kind": "item",
   "name": "Ruby",
   "summary": "Ruby ore, mined from red rocks.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "wiki-mining",
     "wiki-witch-spells"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "category": "ore",
   "obtain": [
     {

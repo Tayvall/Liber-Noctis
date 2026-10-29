@@ -3,16 +3,16 @@
   "kind": "item",
   "name": "Heart",
   "summary": "A heart torn from a living chest: a witch's most-used ingredient.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "tay",
     "wiki-vampire",
     "wiki-witch"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "category": "ingredient",
   "rarity": "common",
-  "effect": "Eating it grants one extra life against a lethal attack.",
+  "effect": "Eating it as a vampire will grant a damage buff.",
   "obtain": [
     {
       "method": "ability",
@@ -32,5 +32,7 @@
       "ability": "Heart Rip"
     }
   ],
-  "notes": "The old handbook says to take it from a willing participant."
+  "tbc": [
+    "effect"
+  ]
 }

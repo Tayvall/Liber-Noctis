@@ -3,13 +3,11 @@
   "kind": "item",
   "name": "Night Vision",
   "summary": "See in the dark.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "wiki-items"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "trinket",
-  "tbc": [
-    "effect"
-  ]
+  "effect": "Allows the user to see in the dark."
 }

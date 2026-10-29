@@ -2,13 +2,12 @@
   "id": "colored-fragment",
   "kind": "item",
   "name": "Colored Fragment",
-  "summary": "A shard of colour that tints a witch's magic.",
-  "trust": "unconfirmed",
+  "summary": "A shard of colour that tints a witch's magic permanently.",
+  "trust": "confirmed",
   "sources": [
-    "tay",
-    "wiki-witch-spells"
+    "tay"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "ingredient",
   "rarity": "common",
   "aka": [
@@ -21,6 +20,5 @@
       "text": "Spawns at random across the map."
     }
   ],
-  "use": "Comes in violet, black, white, red, green, yellow, cyan, pink, orange or blue.",
-  "notes": "The old handbook listed eight colours: orange, black, purple, white, blue, green, red and cyan."
+  "use": "Comes in violet, black, white, red, green, yellow, cyan, pink, orange or blue."
 }

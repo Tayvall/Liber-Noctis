@@ -6,7 +6,7 @@
 
 Needs only the standard library.
 """
-import json, re, sys
+import json, re, struct, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -27,6 +27,13 @@ def load(path, errors, root):
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError) as e:
         errors.append(f"{path.relative_to(root)}: not valid JSON ({e})")
+
+
+def png_size(path):
+    """Width and height from a PNG header, so the book can lay out pages before images load."""
+    with open(path, "rb") as f: head = f.read(24)
+    if head[:8] != b"\x89PNG\r\n\x1a\n": raise ValueError("not a PNG")
+    return struct.unpack(">II", head[16:24])
 
 
 def walk(value, path=""):
@@ -64,6 +71,10 @@ def check(root=ROOT):
             for k, v, p in walk(e):
                 if v in ("", [], {}, None): errors.append(f"{rel}: {p} is empty. Leave a field out instead of blanking it")
             entries[e.get("id")], files[e.get("id")] = e, rel
+            # shortcut: PNG only, add other formats here if they're ever needed
+            for img in e.get("images", []):
+                try: img["w"], img["h"] = png_size(data / "images" / img["file"])
+                except (OSError, ValueError, KeyError, TypeError): errors.append(f"{rel}: image \"{img.get('file') if isinstance(img, dict) else img}\" must be a .png in data/images")
 
     # references, links and sources, now that every id is known
     kind_of = {i: e.get("kind") for i, e in entries.items()}

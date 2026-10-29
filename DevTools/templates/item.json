@@ -4,6 +4,11 @@
   "kind": "item",
   "name": "New item",
   "summary": "One sentence: what it is and why it matters.",
+  "images": [
+    {
+      "file": "item-name.png"
+    }
+  ],
   "trust": "unconfirmed",
   "sources": [
     "tay"

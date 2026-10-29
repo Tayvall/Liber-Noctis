@@ -2,14 +2,13 @@
   "id": "broom",
   "kind": "item",
   "name": "Broom",
-  "summary": "A witch's broom, for chasing or escaping.",
-  "trust": "unconfirmed",
+  "summary": "A witch's broom, for easier movement.",
+  "trust": "confirmed",
   "sources": [
-    "wiki-items",
-    "wiki-witch"
+    "wiki-items"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "category": "trinket",
   "effect": "Faster travel.",
-  "durability": "Low: don't spam it"
+  "durability": "while using will drain.*"
 }

@@ -39,6 +39,9 @@
     "summary": {
       "$ref": "defs.schema.json#/$defs/md"
     },
+    "images": {
+      "$ref": "defs.schema.json#/$defs/images"
+    },
     "trust": {
       "$ref": "defs.schema.json#/$defs/trust"
     },

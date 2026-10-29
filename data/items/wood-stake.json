@@ -3,16 +3,16 @@
   "kind": "item",
   "name": "Wood Stake",
   "summary": "A sharpened stake: the oldest answer to a vampire.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "wiki-items",
     "wiki-human"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "weapon",
   "aka": [
     "Wooden Stake",
     "WoodStake"
   ],
-  "effect": "Punishes vampires at close range."
+  "effect": "Knocks vampires over but does not kill."
 }

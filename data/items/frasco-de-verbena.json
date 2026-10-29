@@ -1,0 +1,23 @@
+{
+  "id": "frasco-de-verbena",
+  "kind": "item",
+  "name": "Frasco de Verbena",
+  "summary": "Prevents Werewolf and Vampire bites for 5 minutes.",
+  "images": [
+    {
+      "file": "potion.png"
+    }
+  ],
+  "trust": "confirmed",
+  "sources": [
+    "tay"
+  ],
+  "last_updated": "2026-10-29",
+  "category": "consumable",
+  "restricted_to": [
+    "witch",
+    "werewolf"
+  ],
+  "effect": "Immunity to werewolf and vampire bites for 5 minutes. You can't buy or drink another while one is active.",
+  "droppable": true
+}

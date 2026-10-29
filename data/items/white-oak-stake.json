@@ -3,14 +3,14 @@
   "kind": "item",
   "name": "White Oak Stake",
   "summary": "The only weapon that can kill an Original Vampire.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "wiki-items",
     "wiki-original-vampire",
     "wiki-witch-spells"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "weapon",
-  "effect": "Kills an [[original-vampire]], and nothing else can.",
+  "effect": "Kills an [[original-vampire]].",
   "droppable": false
 }

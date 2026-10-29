@@ -143,6 +143,9 @@ mark { background: rgb(var(--hl) / .55); color: inherit; border-radius: 2px; pad
 .summary { font-size: 1.04rem; }
 .effect { font-style: italic; font-size: 1.08rem; }
 .incant { font: 700 1.25rem/1.3 var(--label); color: var(--blood); letter-spacing: .04em; }
+.copy { margin-left: 8px; padding: 2px 8px; vertical-align: .2em; font: 600 .68rem/1.4 var(--label); letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-2); background: none; border: 1px solid rgb(var(--rule) / .5); border-radius: 3px; cursor: pointer; }
+.copy:hover, .copy:focus-visible { color: var(--blood); border-color: var(--blood); }
 .blk { display: grid; gap: 4px; }
 .blk h4 { font: 700 .98rem/1.4 var(--label); letter-spacing: .1em; text-transform: uppercase; color: var(--cct); padding-bottom: 3px; border-bottom: 1px solid color-mix(in srgb, var(--cct) 35%, transparent); }
 .contd { font: italic 400 .9rem var(--body); letter-spacing: 0; text-transform: none; color: var(--ink-2); }
@@ -169,6 +172,13 @@ mark { background: rgb(var(--hl) / .55); color: inherit; border-radius: 2px; pad
 .eh .ph { float: right; width: 30%; max-width: 220px; aspect-ratio: 1; margin: 2px 0 6px 16px; }
 .k-race .eh .ph { aspect-ratio: 3 / 4; }
 .k-spell .eh .ph { aspect-ratio: 4 / 3; width: 34%; max-width: 260px; }
+.photo { position: relative; margin: 0; padding: 6px 6px 8px; background: #fbf6ea; box-shadow: 0 2px 7px rgb(var(--gutter) / .35); transform: rotate(var(--tilt)); }
+.photo::before { content: ""; position: absolute; top: -7px; left: 50%; width: 42%; height: 15px; transform: translateX(-50%) rotate(calc(var(--tilt) * -1.5)); background: rgb(236 222 180 / .75); box-shadow: 0 1px 2px rgb(var(--gutter) / .2); }
+.photo img { display: block; width: 100%; height: auto; }
+.photo figcaption { margin-top: 4px; text-align: center; font: .72rem/1.3 var(--label); color: var(--ink-2); }
+.eh .photo { float: right; width: 30%; max-width: 220px; margin: 10px 4px 10px 16px; }
+.photos { display: flex; flex-wrap: wrap; gap: 20px 16px; padding: 10px 4px 4px; }
+.photos .photo { width: calc(25% - 12px); min-width: 90px; }
 .eh { display: block; }
 .eh > * + * { margin-top: 4px; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
@@ -259,6 +269,7 @@ mark { background: rgb(var(--hl) / .55); color: inherit; border-radius: 2px; pad
 .edge.prev:hover .badge, .edge.prev:focus-visible .badge { transform: translate(-10px, -50%) scale(1.15); }
 .edge.next:hover .badge, .edge.next:focus-visible .badge { transform: translate(10px, -50%) scale(1.15); }
 .edge:focus-visible { outline: none; }
+.cover .edge::after { background: var(--leather-dk); }
 .edge[hidden] { display: none; }
 @media (prefers-reduced-motion: reduce) {
   .edge::before, .edge::after, .badge { transition: opacity .3s; }
@@ -511,6 +522,7 @@ dialog.drawer::backdrop { background: rgb(5 2 8 / .7); }
         <p class="sub">< W I P ></p>
         <p class="races">A Compendium of all creatures of the night<br></p>
         <p class="by" id="coverBy"></p>
+        <button class="edge next" id="edgeOpen" type="button" aria-label="Open the book"><span class="badge" aria-hidden="true"><svg class="i"><use href="#s-right"/></svg></span></button>
       </div>
       <div class="cover-back" aria-hidden="true"><div class="endpaper" id="coverPlate"></div></div>
     </div>
@@ -681,8 +693,11 @@ const trust = e => `<span class="trust t-${e.trust}">${TRUST[e.trust]}</span>`;
 const gem = r => r ? `<span><span class="gem" style="--rc:var(--g-${r})" aria-hidden="true"></span>${r[0].toUpperCase() + r.slice(1)}</span>` : "";
 const PICTURED = new Set(["race", "spell", "recipe", "item"]);
 const placeholder = what => `<figure class="ph" role="img" aria-label="${esc(what)}: picture to come"><span>PLACEHOLDER</span></figure>`;
+// a slight, steady tilt per picture (-2.4° to 2.4°), so each looks stuck on by hand
+const tilt = s => { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) | 0; return (Math.abs(h) % 9 - 4) * .6; };
+const photo = (e, m, i) => `<figure class="photo" style="--tilt:${tilt(e.id + i)}deg"><img src="data/images/${esc(m.file)}" alt="${esc(m.caption ? `${e.name}: ${m.caption}` : e.name)}" width="${m.w}" height="${m.h}" loading="lazy">${m.caption ? `<figcaption>${esc(m.caption)}</figcaption>` : ""}</figure>`;
 function head(e, kindline, metaBits = [], extra = "", titled = true) {
-  return B(`<header class="eh">${PICTURED.has(e.kind) ? placeholder(e.name) : ""}${kindline ? `<p class="smallcaps">${kindline}</p>` : ""}${titled ? `<h3 class="et" id="e-${e.id}">${esc(e.name)}</h3>` : ""}
+  return B(`<header class="eh">${e.images ? photo(e, e.images[0], 0) : PICTURED.has(e.kind) ? placeholder(e.name) : ""}${kindline ? `<p class="smallcaps">${kindline}</p>` : ""}${titled ? `<h3 class="et" id="e-${e.id}">${esc(e.name)}</h3>` : ""}
     <div class="meta">${[...metaBits, trust(e)].filter(Boolean).join("")}</div>
     ${e.aka ? `<p class="note">Also called ${e.aka.map(a => `“${esc(a)}”`).join(", ")}</p>` : ""}
     <p class="summary">${inline(e.summary)}</p>${extra}</header>`);
@@ -697,6 +712,7 @@ function worksOn(list) {
 }
 function tail(e) {
   const out = [];
+  if (e.images?.length > 1) out.push(B(`<section class="blk"><h4>Skins</h4><div class="photos">${e.images.slice(1).map((m, i) => photo(e, m, i + 1)).join("")}</div></section>`));
   const gaps = (e.tbc || []).map(f => FIELD[f] || f.replace(/[._]/g, " "));
   const dev = [...(e.disputed || []).map(d => `<p><b>Sources disagree:</b> ${inline(d)}</p>`), e.notes ? md(e.notes) : "",
     gaps.length ? `<p><b>Still to be confirmed:</b> ${esc(gaps.join(", "))}.</p>` : ""].join("");
@@ -757,7 +773,7 @@ const T = {
   spell(e) {
     const form = { spoken: "Spell · Spoken aloud", ritual: "Ritual", granted: "Spell · Granted by quest" }[e.form];
     const b = [head(e, form, [e.caster ? `<span>Cast by ${lev(e.caster)}${unknown(e, "caster.level") ? ` ${tbcBadge}` : ""}</span>` : ""],
-      e.incantation ? `<p class="incant">“${esc(e.incantation)}”</p>` : "")];
+      e.incantation ? `<p class="incant">“${esc(e.incantation)}”<button class="copy" type="button" data-copy="${esc(e.incantation)}" aria-label="Copy the incantation">Copy</button></p>` : "")];
     if (e.effect) b.push(B(`<p class="effect">${inline(e.effect)}</p>`));
     b.push(strip([["Lasts", val(e, "duration", e.duration)], ["Cooldown", val(e, "cooldown", e.cooldown)], ["Works on", e.targets ? esc(e.targets) : ""], ["Wakes", e.activates ? link(e.activates) : ""]]));
     if (e.unlock) b.push(P("Unlocked by", md(e.unlock)));
@@ -1225,7 +1241,8 @@ function wire() {
   for (const id of ["next", "edgeNext", "pNext"]) $(id).onclick = fwd;
   $("toContents").onclick = () => navigate("contents");
   $("ribbon").onclick = () => { const p = returnTo; hideRibbon(); go(spreadOf(p)).then(() => history.pushState(null, "", hashForKey(here()))); };
-  $("openBtn").onclick = () => { history.pushState(null, "", "#contents"); openBook(true); };
+  const openCodex = () => { history.pushState(null, "", "#contents"); openBook(true); };
+  $("openBtn").onclick = $("edgeOpen").onclick = openCodex;
   $("skipLink").onclick = e => { e.preventDefault(); history.pushState(null, "", "#contents"); openBook(false); };
   document.addEventListener("click", e => {
     const a = e.target.closest("a[data-go]");
@@ -1234,6 +1251,14 @@ function wire() {
     if ($("drawer").open) $("drawer").close();
     const k = a.dataset.go === "@map" ? "@realm/map" : a.dataset.go;
     navigate(k, { fromLink: !!a.closest(".page") && !query });
+  });
+  document.addEventListener("click", e => {
+    const b = e.target.closest("button[data-copy]");
+    if (!b) return;
+    navigator.clipboard.writeText(b.dataset.copy).then(() => {
+      b.textContent = "Copied";
+      setTimeout(() => { b.textContent = "Copy"; }, 1500);
+    }, () => { b.textContent = "Select it"; });
   });
   $("q").addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(runSearch, 160); });
   $("q").addEventListener("keydown", e => { if (e.key === "Escape") { e.stopPropagation(); clearSearch(); $("q").blur(); } });
@@ -1255,14 +1280,17 @@ function wire() {
     else if (e.key === "/") { e.preventDefault(); if (phone.matches) document.body.classList.add("searching"); $("q").focus(); }
     else if (e.key === "Escape" && query) clearSearch();
   });
-  const pg = $("pages");
-  pg.addEventListener("touchstart", e => { swipeX = e.touches.length === 1 ? [e.touches[0].clientX, e.touches[0].clientY] : null; }, { passive: true });
-  pg.addEventListener("touchend", e => {
-    if (!swipeX) return;
-    const dx = e.changedTouches[0].clientX - swipeX[0], dy = e.changedTouches[0].clientY - swipeX[1];
-    swipeX = null;
-    if (Math.abs(dx) > 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) (dx < 0 ? fwd : back)();
-  });
+  const swipe = (el, left, right) => {
+    el.addEventListener("touchstart", e => { swipeX = e.touches.length === 1 ? [e.touches[0].clientX, e.touches[0].clientY] : null; }, { passive: true });
+    el.addEventListener("touchend", e => {
+      if (!swipeX) return;
+      const dx = e.changedTouches[0].clientX - swipeX[0], dy = e.changedTouches[0].clientY - swipeX[1];
+      swipeX = null;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) (dx < 0 ? left : right)();
+    });
+  };
+  swipe($("pages"), fwd, back);
+  swipe($("cover"), () => { if (document.body.classList.contains("closed")) openCodex(); }, () => {});
   addEventListener("popstate", fromHash);
   let rt;
   const repack = () => {

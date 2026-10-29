@@ -3,16 +3,19 @@
   "kind": "item",
   "name": "Training Dummy",
   "summary": "A dummy to practise on.",
-  "trust": "unconfirmed",
+  "images": [
+    {
+      "file": "training-dummy.png"
+    }
+  ],
+  "trust": "confirmed",
   "sources": [
     "wiki-items"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "tool",
   "restricted_to": [
     "human"
   ],
-  "tbc": [
-    "effect"
-  ]
+  "effect": "Gives +5 stat points every hit with a 1.3 second delay."
 }

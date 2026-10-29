@@ -3,11 +3,11 @@
   "kind": "item",
   "name": "Silver Stake",
   "summary": "A wood stake bound in silver.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
     "wiki-items"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "category": "weapon",
   "tbc": [
     "effect"

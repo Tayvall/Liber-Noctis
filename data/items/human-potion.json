@@ -2,14 +2,19 @@
   "id": "human-potion",
   "kind": "item",
   "name": "Human Potion",
-  "summary": "Undo your turning and become Human again.",
-  "trust": "unconfirmed",
+  "summary": "Undo your race and become Human again.",
+  "images": [
+    {
+      "file": "potion.png"
+    }
+  ],
+  "trust": "confirmed",
   "sources": [
     "wiki-items",
     "wiki-beginner-guide",
     "wiki-werewolf"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "consumable",
   "aka": [
     "Human dose potion"

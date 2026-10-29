@@ -3,12 +3,11 @@
   "kind": "item",
   "name": "Candle",
   "summary": "A witch's candle. Spells need five.",
-  "trust": "unconfirmed",
+  "trust": "confirmed",
   "sources": [
-    "wiki-items",
-    "wiki-witch-spells"
+    "wiki-items"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "category": "ingredient",
   "use": "Needed to cast witch spells and rituals."
 }

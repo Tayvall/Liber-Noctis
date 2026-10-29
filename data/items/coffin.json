@@ -3,15 +3,35 @@
   "kind": "item",
   "name": "Coffin",
   "summary": "A vampire's coffin.",
-  "trust": "unconfirmed",
+  "images": [
+    {
+      "file": "coffin-base.png",
+      "caption": "Base"
+    },
+    {
+      "file": "dark-coffin.png",
+      "caption": "Dark"
+    },
+    {
+      "file": "white-coffin.png",
+      "caption": "White"
+    },
+    {
+      "file": "coffin-tomb.png",
+      "caption": "Tomb"
+    },
+    {
+      "file": "coffin-buried.png",
+      "caption": "Buried"
+    }
+  ],
+  "trust": "confirmed",
   "sources": [
     "wiki-items",
     "discord-2026-10-26"
   ],
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-29",
   "category": "furniture",
   "notes": "The Original Hybrid's coffin grants the level reward.",
-  "tbc": [
-    "effect"
-  ]
+  "effect": "Will give 1 level every 15 minutes."
 }
